@@ -1,0 +1,75 @@
+#xscript() {
+    position: relative;
+    font-size: 75%;
+}
+
+[rend~=sup] {
+    #xscript;
+    top: -0.5em;
+}
+
+[rend~=sub] {
+    #xscript;
+    top: 0.5em;
+}
+
+teiHeader {
+    display: none;
+}
+
+lb::before {
+    content: "\a";
+    white-space: pre;
+}
+
+lb[rend~=turnover], lb[rend~=turnunder] {
+    display: none;
+}
+
+[ref], [corresp], date {
+    position: relative;
+    cursor: alias;
+
+    & > *:first-child {
+        display: none;
+        white-space: nowrap;
+        position: absolute;
+        left: 105%;
+        bottom: 105%;
+        padding: 5px;
+        background-color: lightgray;
+        border: 1px solid gray;
+    }
+
+    &:hover > *:first-child {
+        display: block;
+    }
+
+    &:hover {
+        background-color: #a0a0a040;
+    }
+}
+
+choice {
+    cursor: help;
+    & > abbr, & > orig, & > sic {
+        display: inline;
+    }
+    & > expan, & > reg, & > corr {
+        display: none;
+    }
+    &:hover {
+        & > abbr, & > orig, & > sic {
+            display: none;
+        }
+        & > expan, & > reg, & > corr {
+            display: inline;
+            background-color: #a0a0a040;
+        }
+    }
+}
+
+unclear {
+    &::before { content: "["; }
+    &::after  { content: "]"; }
+}
