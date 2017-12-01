@@ -1,13 +1,17 @@
 # teish
+
 Simple TEI to HTML converter
 
-# usage
+## usage
+
 Add this line to your TEI file:
+
 ```xml
 <?xml-stylesheet type="text/xsl" href="http://mosher.mine.nu/tei/teish.xslt"?>
 ```
 
-# example
+## example
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
@@ -33,5 +37,7 @@ Add this line to your TEI file:
   </text>
 </TEI>
 ```
-# demo
+
+## demo
+
 http://mosher.mine.nu/SandsSarahWill.tei.xml
