@@ -10,6 +10,15 @@ The XSLT (3.0) stylesheet is
 Just use it as an XSLT transform on your TEI XML file,
 using your favorite XSLT 3.0 tool.
 
+Alternatively, include the following stylesheet processing instruction
+in your TEI XML file:
+
+```xml
+<?xml-stylesheet type="text/xsl" href="https://cdn.rawgit.com/cmosher01/teish/1.0/src/main/resources/private/teish.xslt"?>
+```
+
+(where `1.0` is the version number of `teish.xslt` you want to use).
+
 The stylesheet is tested using Saxon 9.8 Home Edition
 XSLT 3.0 transformer, and Chromium 62.0 browser.
 
