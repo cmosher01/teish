@@ -57,6 +57,7 @@
                     teiHeader { display: none; }
                     div { display: inline; }
                     lb::before { content: "\00000a"; white-space: pre; }
+                    [rend~=center] { text-align: center; display: block; margin-left: auto; margin-right: auto; }
                     [rend~=sup], [type=turnover] { position: relative; font-size: 75%; top: -0.5em; }
                     [rend~=sub], [type=turnunder] { position: relative; font-size: 75%; top: 0.5em; }
                     [type=turnover] > lb, [type=turnunder] > lb { display: none; }
