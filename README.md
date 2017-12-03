@@ -1,43 +1,37 @@
 # teish
 
-Simple TEI to HTML converter
+Simple TEI to HTML converter.
 
 ## usage
 
-Add this line to your TEI file:
+The XSLT (3.0) stylesheet is
+[teish.xslt](src/main/resources/private/teish.xslt)
 
-```xml
-<?xml-stylesheet type="text/xsl" href="http://mosher.mine.nu/tei/teish.xslt"?>
-```
+Just use it as an XSLT transform on your TEI XML file,
+using your favorite XSLT 3.0 tool.
 
-## example
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/xsl" href="http://mosher.mine.nu/tei/teish.xslt"?>
-<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>Foobar: a digital transcription</title>
-      </titleStmt>
-      <publicationStmt>
-        <p>https://github.com/cmosher01/teish</p>
-      </publicationStmt>
-      <sourceDesc>
-        <p>Born digital.</p>
-      </sourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text xml:lang="en">
-    <body>
-      <p>Foobar.</p>
-    </body>
-  </text>
-</TEI>
-```
+The stylesheet is tested using Saxon 9.8 Home Edition
+XSLT 3.0 transformer, and Chromium 62.0 browser.
 
 ## demo
 
-http://mosher.mine.nu/SandsSarahWill.tei.xml
+This project contains a simple web server to demonstrate
+how to read a TEI XML file, transform it using
+`teish.xslt`, and displaying the resulting HTML in
+your favorite browser.
+
+Prerequisite for the demo is having *Java 8* installed.
+
+To run the server:
+
+```sh
+./gradlew --daemon serve
+```
+
+Then browse to http://127.0.0.1:4567 to see the demo.
+
+To stop the server:
+
+```sh
+./gradlew --stop
+```

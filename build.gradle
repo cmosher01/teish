@@ -1,3 +1,7 @@
+import java.util.concurrent.Callable
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
+
 apply plugin: 'java'
 apply plugin: 'application'
 
@@ -15,4 +19,25 @@ dependencies {
     compile group: 'net.sf.saxon', name: 'Saxon-HE', version: 'latest.release'
     compile group: 'org.slf4j', name: 'slf4j-jdk14', version: 'latest.release'
     compile group: 'com.sparkjava', name: 'spark-core', version: 'latest.release'
+}
+
+class RunAsyncTask extends DefaultTask {
+  @TaskAction
+  def startAsync() {
+    ExecutorService es = Executors.newSingleThreadExecutor()
+    es.submit({
+      project.javaexec {
+        classpath = project.sourceSets.main.runtimeClasspath
+        main = project.mainClassName
+      }
+    } as Callable)
+
+  }
+}
+
+task serve(type: RunAsyncTask, dependsOn: compileJava) {
+  doLast {
+    println 'browse to http://127.0.0.1:4567'
+    sleep(2 * 1000)
+  }
 }
