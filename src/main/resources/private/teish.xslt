@@ -60,8 +60,7 @@
                     [rend~=sup], [type=turnover] { position: relative; font-size: 75%; top: -0.5em; }
                     [rend~=sub], [type=turnunder] { position: relative; font-size: 75%; top: 0.5em; }
                     [type=turnover] > lb, [type=turnunder] > lb { display: none; }
-                    [ref], [corresp], date, choice { cursor: help; }
-                    [ref]:hover, [corresp]:hover, date:hover, choice:hover { background-color: #a0a0a040; }
+                    [title]:hover { cursor: help; background-color: #a0a0a040; }
                     choice > expan, choice > reg, choice > corr { display: none; }
                 </style>
                 <title>

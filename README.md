@@ -34,7 +34,7 @@ Prerequisite for the demo is having *Java 8* installed.
 To run the server:
 
 ```sh
-./gradlew --daemon serve
+./gradlew --daemon build serve
 ```
 
 Then browse to http://127.0.0.1:4567 to see the demo.
