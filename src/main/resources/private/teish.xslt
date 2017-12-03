@@ -56,7 +56,7 @@
                 <style>
                     teiHeader { display: none; }
                     div { display: inline; }
-                    lb::before { content: "\a"; white-space: pre; }
+                    lb::before { content: "\00000a"; white-space: pre; }
                     [rend~=sup], [type=turnover] { position: relative; font-size: 75%; top: -0.5em; }
                     [rend~=sub], [type=turnunder] { position: relative; font-size: 75%; top: 0.5em; }
                     [type=turnover] > lb, [type=turnunder] > lb { display: none; }
@@ -90,6 +90,32 @@
             </xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:pb">
+        <xsl:element name="hr">
+            <xsl:apply-templates select="@*"/>
+            <xsl:attribute name="class">
+                <xsl:value-of select="local-name()"/>
+            </xsl:attribute>
+            <xsl:attribute name="title">
+                <xsl:value-of select="fn:concat('page: ',@n)"/>
+                <xsl:if test="@type">
+                    <xsl:value-of select="fn:concat(' (',@type,')')"/>
+                </xsl:if>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:fw[@type]">
+        <xsl:copy>
+            <xsl:apply-templates select="@*"/>
+            <xsl:attribute name="title">
+                <xsl:value-of select="@type"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:copy>
     </xsl:template>
 
     <xsl:template match="tei:date[@when]">
