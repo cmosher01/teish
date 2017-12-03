@@ -54,46 +54,15 @@
                 <meta charset="utf-8"/>
                 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"/>
                 <style>
-                    teiHeader {
-                        display: none;
-                    }
-
-                    div {
-                        display: inline;
-                    }
-
-                    lb::before {
-                        content: "\a";
-                        white-space: pre;
-                    }
-
-                    [rend~=sup], [type=turnover] {
-                        position: relative;
-                        font-size: 75%;
-                        top: -0.5em;
-                    }
-
-                    [rend~=sub], [type=turnunder] {
-                        position: relative;
-                        font-size: 75%;
-                        top: 0.5em;
-                    }
-
-                    [type=turnover] > lb, [type=turnunder] > lb {
-                        display: none;
-                    }
-
-                    [ref], [corresp], date, choice {
-                        cursor: help;
-                    }
-
-                    [ref]:hover, [corresp]:hover, date:hover, choice:hover {
-                        background-color: #a0a0a040;
-                    }
-
-                    choice > expan, choice > reg, choice > corr {
-                        display: none;
-                    }
+                    teiHeader { display: none; }
+                    div { display: inline; }
+                    lb::before { content: "\a"; white-space: pre; }
+                    [rend~=sup], [type=turnover] { position: relative; font-size: 75%; top: -0.5em; }
+                    [rend~=sub], [type=turnunder] { position: relative; font-size: 75%; top: 0.5em; }
+                    [type=turnover] > lb, [type=turnunder] > lb { display: none; }
+                    [ref], [corresp], date, choice { cursor: help; }
+                    [ref]:hover, [corresp]:hover, date:hover, choice:hover { background-color: #a0a0a040; }
+                    choice > expan, choice > reg, choice > corr { display: none; }
                 </style>
                 <title>
                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
