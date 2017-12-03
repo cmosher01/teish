@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+group = 'nu.mine.mosher.xml.xslt'
+version = '1.0.0-SNAPSHOT'
+mainClassName = 'nu.mine.mosher.xml.xslt.XsltServer'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'net.sf.saxon', name: 'Saxon-HE', version: 'latest.release'
+    compile group: 'org.slf4j', name: 'slf4j-jdk14', version: 'latest.release'
+    compile group: 'com.sparkjava', name: 'spark-core', version: 'latest.release'
+}

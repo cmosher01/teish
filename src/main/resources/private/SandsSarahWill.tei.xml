@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title>Sarah Sands Probate Records: a digital transcription</title>
+        </titleStmt>
+        <publicationStmt>
+            <p>Christopher A. Mosher, Shelton, CT, USA, 2017.</p>
+        </publicationStmt>
+        <sourceDesc>
+            <bibl>
+                Town of New Shoreham (Rhode Island), "Land Evidence," 1: 416-417,
+                estate of Sarah Sands, 1709; Town Clerk's Office, Block Island.
+            </bibl>
+        </sourceDesc>
+    </fileDesc>
+
+    <profileDesc>
+        <particDesc>
+            <person xml:id="SarahSands"><persName><forename>Sarah</forename><surname type="married">Sands</surname></persName></person>
+            <person xml:id="JamesSandsSr"><persName><forename>James</forename><surname>Sands</surname></persName></person>
+            <person xml:id="EdwardSands"><persName><forename>Edward</forename><surname>Sands</surname></persName></person>
+            <person xml:id="JohnSands"><persName><forename>John</forename><surname>Sands</surname></persName></person>
+            <person xml:id="JamesSandsJr"><persName><forename>James</forename><surname>Sands</surname></persName></person>
+            <person xml:id="SamuelSands"><persName><forename>Samuel</forename><surname>Sands</surname></persName></person>
+            <person xml:id="SarahNiles"><persName><forename>Sarah</forename><surname type="married">Niles</surname></persName></person>
+            <person xml:id="MercyRaymond"><persName><forename>Mercy</forename><surname type="married">Raymond</surname></persName></person>
+            <person xml:id="MarySands"><persName><forename>Mary</forename><surname type="married">Sands</surname></persName></person>
+            <person xml:id="SamuelNiles"><persName><forename>Samuel</forename><surname>Niles</surname></persName></person>
+            <person xml:id="SarahNiles2"><persName><forename>Sarah</forename><surname>Niles</surname></persName></person>
+            <person xml:id="DavidBrown"><persName><forename>David</forename><surname>Brown</surname></persName></person>
+            <person xml:id="Leano"><persName><forename>Leano</forename></persName></person>
+            <person xml:id="HannahRose"><persName><forename>Hannah</forename><surname>Rose</surname></persName></person>
+            <person xml:id="NathanielMott"><persName><forename>Nathaniel</forename><surname>Mott</surname></persName></person>
+            <person xml:id="JobCard"><persName><forename>Job</forename><surname>Card</surname></persName></person>
+            <person xml:id="ThomasRathbone"><persName><forename>Thomas</forename><surname>Rathbone</surname></persName></person>
+            <person xml:id="SimonRay"><persName><forename>Simon</forename><surname>Ray</surname></persName></person>
+            <person xml:id="EdwardBall"><persName><forename>Edward</forename><surname>Ball</surname></persName></person>
+        </particDesc>
+    </profileDesc>
+</teiHeader>
+
+
+
+<text xml:lang="en">
+<body>
+<pb type="new" n="416" />
+<pb type="original" n="350" />
+<head>
+<persName ref="#SarahSands">Sarah Sands</persName> seall <graphic url=""/> Block Island alias New Shorum
+</head>
+
+
+
+<div type="will">
+    <div type="header">
+        <ab>
+            <lb/>In
+            <w xml:id="the"><choice><abbr>þ<hi rend="sup">e</hi></abbr><expan>the</expan></choice></w>
+            name of God Amen I <persName ref="#SarahSands">Sarah Sands</persName> of
+            <lb/><placeName>Block Island alias New Shorum in <w copyOf="#the"/> Coliny of Rhod Is
+            <lb break="no"/>land and providence plantations in new ingland</placeName>
+            <lb/>being aged and weake in body but of sound and
+            <lb/>perfect memory praise be given to almighty
+            <lb/>God for <w copyOf="#the"/> same and knowing <w copyOf="#the"/> unsertainty of this
+            <lb/>life one Earth and being desireous to settel things
+            <lb/>in order before my death dow make this my last
+            <lb/>will and testament in maner and forme foloing
+        </ab>
+    </div>
+    <div type="overview">
+        <div type="dower">
+            <ab>
+                <lb/>I being wife to
+                <persName ref="#JamesSandsSr">
+                <roleName type="honorific" full="abb">
+                <choice><abbr>M<hi rend="sup">r</hi></abbr><expan>Mister</expan></choice>
+                </roleName>
+                James Sands
+                </persName>
+                deseased and
+                <lb/>made sole executrix by my
+                <w xml:id="said"><choice><abbr>sd</abbr><expan>said</expan></choice></w>
+                husband as by will
+                <lb/>bareing date
+                <date calendar="julian" datingMethod="julian" when-custom="1694-06-18">
+                    June <w copyOf="#the"/> 18<hi rend="sup">th</hi> 1694
+                </date>
+                may plainly appear
+            </ab>
+        </div>
+        <div type="soul">
+            <ab>
+                <lb/>that is to saye first and prinsipally I commend my
+                <lb/>soul to allmity God my creatur assueredly be<pc force="weak">-</pc>
+                <lb break="no"/>leiving that I shall receive full pardon and free
+                <lb/>remision of all my sins and be savid by <w copyOf="#the"/> presi
+                <lb break="no"/>ous death and merits of my blesed saviour and re
+                <lb break="no"/>deamer Christ Jesus
+            </ab>
+        </div>
+        <div type="body">
+            <ab>
+                and my body to <w copyOf="#the"/> earth from
+                <lb/>whence it was first tacken to be buried in such dease
+                <seg type="turnover"><lb/><pc force="weak">(</pc>nt</seg>
+                <lb/>and Christian maner as to my <rs type="person" ref="#EdwardSands">executer</rs> hearafter
+                <lb/>named shall be thought most meet and convenient
+            </ab>
+        </div>
+        <div type="estate">
+            <ab>
+                <lb/>and as touching such worldly <seg xml:id="estate">estate</seg> as <w copyOf="#the"/> Lord in
+                <lb/>marcy hath lent me my will and meaning is <seg corresp="#estate"><w copyOf="#the"/>
+                <lb/>same</seg> shall be impleied and bestowed as hear
+                <lb break="no"/>after by this my will is exspresed
+            </ab>
+        </div>
+        <div type="revoke">
+            <ab>
+                and first I dow
+                <lb/>renounce revock <choice><orig>floustarate</orig><reg>frustrate</reg></choice> and make void all
+                <lb/>wills by me formerly made and declared and apoint
+                <lb/>this my last will and testament in maner and form
+                <lb/>following
+            </ab>
+        </div>
+    </div>
+    <div n="1" type="item">
+        <ab>
+            Itum furst I give and bequea<subst><del>f</del><add type="overwrite">th</add></subst> and
+            <lb/>my will is that all my debts and funarall charg
+            <seg type="turnover"><lb/><pc force="weak">(</pc>es</seg>
+            <lb/>be payed and discharged
+        </ab>
+    </div>
+    <div n="2" type="item">
+        <ab>
+            Item 2ly I give and
+            <lb/>prins<subst><del rend="overstrike">e</del><add type="overwrite">a</add></subst>pelly
+            make my youngest sonn <persName ref="#EdwardSands">Edward Sands</persName>
+            <lb/>my sole executor of all my hole estate both catell sheep
+            <lb/>hors coyne and housal stuf or what so ever I shall leave
+            <lb/>at my death exsepting and reserving what is hear
+            <lb break="no"/>after mentioned which is five cows and one hun
+            <lb break="no"/>dred sheep which my will is that thay shall be e
+            <lb break="no"/>quilly devided amoungst my five children which
+            <lb/>are as followeth
+                <persName ref="#JohnSands">John Sands</persName>
+                <persName ref="#JamesSandsJr">James Sands</persName>
+                <persName ref="#SamuelSands">Samuel<lb/>Sands</persName> and
+                <persName ref="#SarahNiles">Sarah Niels</persName> and
+                <persName ref="#MercyRaymond">Marcy Ramond</persName> and
+            <lb/>dow freely give and bequea<unclear>f</unclear>e to each of them
+            <pb type="new" n="417" />
+            <pb type="original" n="351" />351
+            <lb/>all former gifts or monys due to me from them all
+            <lb break="no"/>ways
+
+            provided that <persName ref="#JamesSandsJr">James Sands</persName> doth forever aqui<unclear>r</unclear>
+            <seg type="turnover"><lb/><unclear>e</unclear></seg>
+            <lb/>any protended <del rend="overstrike"><unclear>or</unclear></del> right or clame of asertain<pc>:</pc> ne
+            <lb break="no"/>gero woman comanly caled by <w copyOf="#the"/> name of <persName ref="#Leano">Leano</persName> <pc>- -</pc>
+            <lb/>bought of <persName ref="#DavidBrown">David Broun</persName>
+            otherways <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
+            <lb/>Sands</persName> shall paye to <w copyOf="#the"/> person home shall be dispose
+            <seg type="turnover"><lb/><pc force="weak">(</pc>s</seg>
+            <lb break="no"/>ed of <w copyOf="#said"/> <rs type="person" ref="#Leano">neagore woman</rs> by <w copyOf="#said"/> <persName ref="#JamesSandsJr">Sands</persName> meanes
+            <lb/>twenty pounds currant mony which he <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
+            <lb/>Sands</persName> hath allredy reseived of me tenn pounds by
+            <lb/>his brother <persName ref="#JohnSands">John Sands</persName> and tenn pounds of <rs type="person" ref="#SarahSands">myself</rs>
+            <lb/>in wool and cheas and butter which <rs type="person" ref="#JamesSandsJr">he</rs> hath received
+            <lb/>upon <w copyOf="#the"/> acounte of <w copyOf="#said"/> <rs type="person" ref="#Leano">negero</rs>
+        </ab>
+    </div>
+    <div n="3" type="item">
+        <ab>
+            Itum 3 I give to
+            <lb/>my grandaughter <persName ref="#SarahNiles2">Sarah Niels</persName> one good fether beed
+            <lb/>and bolster and tow pillows and one blancket
+        </ab>
+    </div>
+    <div n="4" type="item">
+        <ab>
+            Itum
+            <lb/>4 I give to my daughter <persName ref="#MercyRaymond">Marcy Ramond</persName> one good
+            <lb/>larg chest onely what goods shall be left in <w copyOf="#said"/> chest
+            <lb/>shall be equilly devided betwene hurself and my
+            <lb/>daughter in law <persName ref="#MarySands">Mary Sands</persName> wife to my sonn
+            <lb/><persName ref="#EdwardSands">Edward Sands</persName>
+        </ab>
+    </div>
+    <div n="5" type="item">
+        <ab>
+            Itum 5 I give to my tow daughters
+            <lb/><persName ref="#SarahNiles">Sarah Niels</persName> and <persName ref="#MercyRaymond">Marcy Ramond</persName> each of them a
+            <lb/>good larg puter platter apease
+        </ab>
+    </div>
+    <div type="residue">
+        <ab>
+            all <w copyOf="#the"/> rest of my <w copyOf="#said"/>
+            <lb/><seg corresp="#estate">estate</seg> I dow freely give unto my executor <persName ref="#EdwardSands">Ed
+            <lb break="no"/>ward Sands</persName> him and his hayors forever
+        </ab>
+    </div>
+    <div type="execution">
+        <ab>
+            as<pc> - -</pc>
+            <lb/>witness my hand and seall this
+            <date calendar="julian" datingMethod="julian" when-custom="1703-10-17">
+                sevent<subst><del>h</del><add type="overwrite">eenth</add></subst>
+                <lb/>of October one thousand seven hundred and<lb/>three
+            </date>
+            and
+            <date datingMethod="EnglandRegnalYear" when-custom="2 Anne">
+                in <w copyOf="#the"/> second year of hur magistys
+                <lb/>Queen An of Ingland Scotland
+            </date>
+            <pc>¶</pc>
+            <lb/>
+            <lb/><persName ref="#SarahSands">Sarah Sands</persName> hur seall <graphic url=""/>
+        </ab>
+    </div>
+    <div type="witness">
+        <p>
+            <lb/>signed sealed and delivered in presence of<lb/>us
+            <lb/><persName ref="#SamuelNiles">Samuel Niels</persName>
+            <lb/><persName ref="#HannahRose">Hanah Rose</persName> hur mark H
+            <lb/><persName ref="#NathanielMott">Nathell Mot</persName>
+        </p>
+    </div>
+</div>
+<div type="certified">
+    <p>
+        <lb/>A tru copy taken
+        <lb/>out of <w copyOf="#the"/> origanall
+        <lb/>will by me <persName ref="#JobCard">Job
+        <lb/>Card <roleName type="office">Town
+        <lb/>Clark</roleName></persName>
+    </p>
+</div>
+<div type="proved">
+    <p>
+        <lb/>At a meeting at <w copyOf="#the"/> hous of <persName ref="#EdwardBall">Edward Ball</persName>s
+        <lb/>by <w copyOf="#the"/> Town Counsell of Shorum
+        <date calendar="julian" datingMethod="julian" when-custom="1709-06-13">
+            June <w copyOf="#the"/> 13<hi rend="sup">th</hi><lb/>1709
+        </date>
+        <persName ref="#SamuelNiles">Samuel Niels</persName> of Kingstown and
+        <lb/><persName ref="#NathanielMott">Nathanal Mott</persName> of Shorum both of <w copyOf="#the"/> Coliny
+        <lb/>of Rhod Island personaly apearing before
+        <lb/>us and testifeeing upon oath that <w copyOf="#the"/> <rs type="person" ref="#SarahSands">tes
+        <lb break="no"/>tater</rs> was in her per<subst><del><gap reason="overwriting illegible" quantity="1" unit="chars"/></del><add type="overwrite">p</add></subst>het mind and
+        <lb/>memory at <w copyOf="#the"/> signings
+        <lb/>and sealing of this tes
+        <lb break="no"/>tament
+    </p>
+    <p>
+        <lb/>as atested by us
+        <lb/><persName ref="#SimonRay">Simon Ray <roleName type="office">Ward<unclear>en</unclear></roleName></persName>
+        <lb/>and <persName ref="#EdwardBall">Edward Ball <roleName type="office">War<unclear>den</unclear></roleName></persName>
+    </p>
+    <p>
+        <lb/><persName ref="#SimonRay">Simon Ray</persName>
+        <lb/><persName ref="#JobCard">Job Card</persName>
+        <lb/><persName ref="#ThomasRathbone">Thomas Rathbon</persName>
+    </p>
+</div>
+
+
+
+</body>
+</text>
+
+
+
+</TEI>
