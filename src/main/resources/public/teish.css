@@ -1,0 +1,60 @@
+teiHeader {
+    display: none;
+}
+
+div.textDiv {
+    display: inline;
+}
+
+lb::before {
+    content: "\00000a";
+    white-space: pre;
+}
+
+[rend~=center] {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[rend~=sup], [type=turnover] {
+    position: relative;
+    font-size: 75%;
+    top: -0.5em;
+}
+
+[rend~=sub], [type=turnunder] {
+    position: relative;
+    font-size: 75%;
+    top: 0.5em;
+}
+
+[type=turnover]>lb, [type=turnunder]>lb {
+    display: none;
+}
+
+[title]:hover {
+    cursor: help;
+    background-color: #cd5c5c40 /*indianred+alpha*/;
+}
+
+.editorial {
+    color: indianred;
+}
+
+choice>expan, choice>reg, choice>corr {
+    display: none;
+}
+
+.title[level=a]::before, .title[level=u]::before {
+    content: '\00201c';
+}
+
+.title[level=a]::after, .title[level=u]::after {
+    content: '\00201d';
+}
+
+.title[level=m], .title[level=j], .title[level=s] {
+    font-style: italic;
+}

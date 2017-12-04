@@ -41,29 +41,17 @@
 
     <!-- remove xml namespace from attributes -->
     <xsl:template match="@xml:*">
-        <xsl:attribute name="{local-name()}">
+        <xsl:attribute name="{fn:local-name()}">
             <xsl:value-of select="."/>
         </xsl:attribute>
     </xsl:template>
 
-    <!-- main TEI page template -->
+    <!-- TEI document ==> HTML web page -->
     <xsl:template match="tei:TEI">
         <html>
             <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                 <meta charset="utf-8"/>
-                <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"/>
-                <style>
-                    teiHeader { display: none; }
-                    div { display: inline; }
-                    lb::before { content: "\00000a"; white-space: pre; }
-                    [rend~=center] { text-align: center; display: block; margin-left: auto; margin-right: auto; }
-                    [rend~=sup], [type=turnover] { position: relative; font-size: 75%; top: -0.5em; }
-                    [rend~=sub], [type=turnunder] { position: relative; font-size: 75%; top: 0.5em; }
-                    [type=turnover] > lb, [type=turnunder] > lb { display: none; }
-                    [title]:hover { cursor: help; background-color: #a0a0a040; }
-                    choice > expan, choice > reg, choice > corr { display: none; }
-                </style>
+                <link rel="stylesheet" type="text/css" href="../../teish.css"/>
                 <title>
                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                 </title>
@@ -76,28 +64,74 @@
         </html>
     </xsl:template>
 
-    <!-- other TEI handling -->
+    <!-- TEI head ==> HTML header -->
     <xsl:template match="tei:head">
         <xsl:element name="header">
             <xsl:apply-templates select="@* | node()"/>
         </xsl:element>
     </xsl:template>
 
+    <!-- TEI body ==> HTML div type=textBody -->
     <xsl:template match="tei:body">
-        <xsl:element name="div" namespace="">
+        <xsl:element name="div">
             <xsl:apply-templates select="@*"/>
-            <xsl:attribute name="type">
+            <xsl:attribute name="class">
                 <xsl:value-of select="'textBody'"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
+    <!-- TEI title ==> HTML span class=title -->
+    <xsl:template match="tei:title">
+        <xsl:element name="span">
+            <xsl:apply-templates select="@*"/>
+            <xsl:attribute name="class">
+                <xsl:value-of select="fn:local-name()"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+    <!-- TEI div ==> HTML div class=textDiv -->
+    <xsl:template match="tei:div">
+        <xsl:copy>
+            <xsl:apply-templates select="@*"/>
+            <xsl:attribute name="class">
+                <xsl:value-of select="'textDiv'"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:copy>
+    </xsl:template>
+
+    <!-- TEI ref target=url ==> HTML a class=teiRef href=url -->
+    <xsl:template match="tei:ref[@target]">
+        <xsl:element name="a">
+            <xsl:apply-templates select="@*"/>
+            <xsl:attribute name="class">
+                <xsl:value-of select="'teiRef'"/>
+            </xsl:attribute>
+            <xsl:attribute name="href">
+                <xsl:value-of select="@target"/>
+            </xsl:attribute>
+            <!-- if empty content, add target as text -->
+            <xsl:choose>
+                <xsl:when test="node()">
+                    <xsl:apply-templates/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="@target"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:element>
+    </xsl:template>
+
+    <!-- TEI ref target=url ==> HTML a class=teiRef href=url -->
     <xsl:template match="tei:pb">
         <xsl:element name="hr">
             <xsl:apply-templates select="@*"/>
             <xsl:attribute name="class">
-                <xsl:value-of select="local-name()"/>
+                <xsl:value-of select="fn:local-name()"/>
             </xsl:attribute>
             <xsl:attribute name="title">
                 <xsl:value-of select="fn:concat('page: ',@n)"/>
@@ -109,6 +143,7 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- TEI fw type ==> HTML fw title -->
     <xsl:template match="tei:fw[@type]">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
@@ -119,6 +154,7 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- TEI date when ==> HTML date title -->
     <xsl:template match="tei:date[@when]">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
@@ -129,6 +165,7 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- TEI date when-custom datingMethod ==> HTML date title -->
     <xsl:template match="tei:date[@when-custom]">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
@@ -139,6 +176,7 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- TEI * ref/corresp ==> HTML * title -->
     <xsl:template match="element()[@ref|@corresp]">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
@@ -152,6 +190,7 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- TEI choice ==> HTML choice title -->
     <xsl:template match="tei:choice[tei:expan|tei:reg|tei:corr]">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
@@ -162,6 +201,7 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- TEI gap/unclear ==> HTML [...] -->
     <xsl:template match="tei:gap | tei:unclear">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
@@ -170,20 +210,35 @@
                 <xsl:if test="@*">
                     <xsl:value-of select="': '"/>
                     <xsl:for-each select="@*">
-                        <xsl:value-of select="fn:concat(name(),'=',.,' ')"/>
+                        <xsl:value-of select="fn:concat(fn:local-name(),'=',.,' ')"/>
                     </xsl:for-each>
                 </xsl:if>
             </xsl:attribute>
-            <xsl:value-of select="'['"/>
+            <xsl:element name="span">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="'editorial'"/>
+                </xsl:attribute>
+                <xsl:value-of select="'['"/>
+            </xsl:element>
             <xsl:if test="fn:not(node())">
-                <xsl:value-of select="'?'"/>
+                <xsl:element name="span">
+                    <xsl:attribute name="class">
+                        <xsl:value-of select="'editorial'"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="'?'"/>
+                </xsl:element>
             </xsl:if>
             <xsl:apply-templates/>
-            <xsl:value-of select="']'"/>
+            <xsl:element name="span">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="'editorial'"/>
+                </xsl:attribute>
+                <xsl:value-of select="']'"/>
+            </xsl:element>
         </xsl:copy>
     </xsl:template>
 
-    <!-- expand copyOf elements first, then do all other processing -->
+    <!-- expand TEI copyOf elements first, then do all other processing -->
     <xsl:template match="/">
         <xsl:variable name="expanded">
             <xsl:apply-templates mode="copyOf"/>
@@ -191,6 +246,7 @@
         <xsl:apply-templates select="$expanded/*"/>
     </xsl:template>
 
+    <!-- * copyOf #ID ==> (deep copy of) * id=ID -->
     <xsl:template match="element()[@copyOf]" mode="copyOf">
         <xsl:variable name="ref" select="@copyOf"/>
         <xsl:if test="fn:starts-with($ref,'#')">
