@@ -39,5 +39,5 @@ To stop the server:
 ```
 
 If you want to use the demo application to server your own
-TEI (``.xml`) source files, place them into the `tei`
+TEI (`.xml`) source files, place them into the `tei`
 directory, and refresh the home page.
