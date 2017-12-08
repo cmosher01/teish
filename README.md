@@ -4,20 +4,13 @@ Simple TEI to HTML converter.
 
 ## usage
 
-The XSLT (3.0) stylesheet is
-[teish.xslt](src/main/resources/private/teish.xslt)
+The XSLT (3.0) transformation (stylesheet) is
+[https://cdn.rawgit.com/cmosher01/teish/1.1/src/main/resources/teish.xslt]
+and the CSS stylesheet is
+[https://cdn.rawgit.com/cmosher01/teish/1.1/src/main/resources/teish.css]
 
 Just use it as an XSLT transform on your TEI XML file,
 using your favorite XSLT 3.0 tool.
-
-Alternatively, include the following stylesheet processing instruction
-in your TEI XML file:
-
-```xml
-<?xml-stylesheet type="text/xsl" href="https://cdn.rawgit.com/cmosher01/teish/1.0/src/main/resources/private/teish.xslt"?>
-```
-
-(where `1.0` is the version number of `teish.xslt` you want to use).
 
 The stylesheet is tested using Saxon 9.8 Home Edition
 XSLT 3.0 transformer, and Chromium 62.0 browser.
@@ -37,10 +30,14 @@ To run the server:
 ./gradlew --daemon build serve
 ```
 
-Then browse to http://127.0.0.1:4567 to see the demo.
+Then browse to the home page at http://127.0.0.1:4567 to see the demo.
 
 To stop the server:
 
 ```sh
 ./gradlew --stop
 ```
+
+If you want to use the demo application to server your own
+TEI (``.xml`) source files, place them into the `tei`
+directory, and refresh the home page.

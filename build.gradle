@@ -17,6 +17,9 @@ repositories {
 
 dependencies {
     compile group: 'net.sf.saxon', name: 'Saxon-HE', version: 'latest.release'
+    compile group: 'xerces', name: 'xercesImpl', version: 'latest.release', {
+        exclude group: 'xml-apis'
+    }
     compile group: 'org.slf4j', name: 'slf4j-jdk14', version: 'latest.release'
     compile group: 'com.sparkjava', name: 'spark-core', version: 'latest.release'
 }
@@ -29,6 +32,7 @@ class RunAsyncTask extends DefaultTask {
       project.javaexec {
         classpath = project.sourceSets.main.runtimeClasspath
         main = project.mainClassName
+        args = ["./tei"]
       }
     } as Callable)
 
