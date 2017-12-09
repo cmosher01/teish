@@ -1,12 +1,12 @@
 package nu.mine.mosher.xml.xslt;
 
-import net.sf.saxon.s9api.SaxonApiException;
+import nu.mine.mosher.xml.SimpleXml;
+import org.xml.sax.SAXParseException;
 
-import javax.xml.transform.stream.StreamSource;
-import java.io.File;
+import javax.xml.transform.TransformerException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,7 +15,6 @@ import java.nio.file.Paths;
 import static spark.Spark.*;
 
 public class XsltServer {
-    private final Saxon saxon = new Saxon();
     private Path teidir;
 
     public static void main(final String... args) throws IOException {
@@ -31,23 +30,7 @@ public class XsltServer {
         staticFiles.expireTime(600);
 
         redirect.get("", "/");
-        get("/", (req, res) -> {
-            final StringBuilder s = new StringBuilder(1024);
-            s.append("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>TEI</title></head><body><ul>");
-
-            Files.newDirectoryStream(this.teidir, path -> path.toString().endsWith(".xml")).forEach(f -> {
-                final String fn = f.getFileName().toString();
-                s.append("<li>");
-//                s.append("<a href=\"text/").append(fn).append("/teish.xslt\">").append(fn).append("</a>");
-//                s.append("&nbsp;<small>(<a href=\"text/").append(fn).append("\">TEI</a>)</small>");
-                s.append("<small>[<a href=\"text/").append(fn).append("/teish.xslt\">formatted</a>]</small>&nbsp;");
-                s.append("<small>[<a href=\"text/").append(fn).append("\">TEI</a>]</small>&nbsp;").append(fn);
-                s.append("</li>");
-            });
-
-            s.append("</ul></body></html>");
-            return s.toString();
-        });
+        get("/", (req, res) -> index());
 
         get("/text/:xml", (req, res) -> {
             res.type("application/xml; charset=utf-8");
@@ -57,6 +40,22 @@ public class XsltServer {
             res.type("text/html; charset=utf-8");
             return text(req.params(":xml"), req.params(":xslt"));
         });
+    }
+
+    private String index() throws IOException {
+        final StringBuilder s = new StringBuilder(1024);
+        s.append("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>TEI</title></head><body><ul>");
+
+        Files.newDirectoryStream(this.teidir, path -> path.toString().endsWith(".xml")).forEach(f -> {
+            final String fn = f.getFileName().toString();
+            s.append("<li>");
+            s.append("<small>[<a href=\"text/").append(fn).append("/teish.xslt\">formatted</a>]</small>&nbsp;");
+            s.append("<small>[<a href=\"text/").append(fn).append("\">TEI</a>]</small>&nbsp;").append(fn);
+            s.append("</li>");
+        });
+
+        s.append("</ul></body></html>");
+        return s.toString();
     }
 
     private void handleArgs(final String... args) throws IOException {
@@ -70,27 +69,27 @@ public class XsltServer {
         this.teidir = teidir;
     }
 
-    private StringBuffer text(final String nameXml, final String nameXslt) throws SaxonApiException, FileNotFoundException {
-        return this.saxon.xform(this.saxon.createXdoc(getLocalSource(nameXml)), this.saxon.createXformer(getResSource(nameXslt)));
+    private String text(final String nameXml, final String nameXslt) throws SAXParseException, IOException, URISyntaxException, TransformerException {
+        return getXml(nameXml).transform(readFrom(getResourcePath(nameXslt)));
     }
 
-    private StringBuffer text(final String nameXml) throws SaxonApiException, FileNotFoundException {
-        return this.saxon.form(this.saxon.createXdoc(getLocalSource(nameXml)));
+    private String text(final String nameXml) throws SAXParseException, IOException {
+        return getXml(nameXml).toString();
     }
 
-    private StreamSource getLocalSource(final String filename) throws FileNotFoundException {
-        return new StreamSource(getLocalFile(filename));
+    private SimpleXml getXml(final String nameXml) throws IOException, SAXParseException {
+        return new SimpleXml(readFrom(getLocalPath(nameXml)));
     }
 
-    private File getLocalFile(final String filename) throws FileNotFoundException {
-        return this.teidir.resolve(filename).toFile();
+    private Path getLocalPath(final String filename) throws FileNotFoundException {
+        return this.teidir.resolve(filename);
     }
 
-    private static StreamSource getResSource(final String filename) {
-        return new StreamSource(getResReader(filename));
+    private static Path getResourcePath(final String filename) throws URISyntaxException {
+        return Paths.get(XsltServer.class.getResource("/" + filename).toURI());
     }
 
-    private static InputStreamReader getResReader(final String filename) {
-        return new InputStreamReader(XsltServer.class.getResourceAsStream("/" + filename), StandardCharsets.UTF_8);
+    private static String readFrom(final Path source) throws IOException {
+        return String.join("\n", Files.readAllLines(source, StandardCharsets.UTF_8));
     }
 }

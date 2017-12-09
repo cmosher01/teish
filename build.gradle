@@ -11,15 +11,14 @@ mainClassName = 'nu.mine.mosher.xml.xslt.XsltServer'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenLocal()
     mavenCentral()
+    maven {
+        url 'http://mosher.mine.nu/nexus/repository/maven-public/'
+    }
 }
 
 dependencies {
-    compile group: 'net.sf.saxon', name: 'Saxon-HE', version: 'latest.release'
-    compile group: 'xerces', name: 'xercesImpl', version: 'latest.release', {
-        exclude group: 'xml-apis'
-    }
+    compile group: 'nu.mine.mosher.xml', name: 'SimpleXml', version: 'latest.integration'
     compile group: 'org.slf4j', name: 'slf4j-jdk14', version: 'latest.release'
     compile group: 'com.sparkjava', name: 'spark-core', version: 'latest.release'
 }
