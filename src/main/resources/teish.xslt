@@ -16,7 +16,7 @@
     />
 
     <xsl:param name="full" as="xs:boolean" select="fn:false()"/>
-    <xsl:param name="css" as="xs:anyURI" select="../../teish.css"/>
+    <xsl:param name="css" as="xs:string" select="'../../teish.css'"/>
 
     <!-- identity (copy all elements and attributes) -->
     <xsl:template match="element() | comment() | processing-instruction() | @*" mode="#all">
@@ -57,7 +57,17 @@
                 <html>
                     <head>
                         <meta charset="utf-8"/>
-                        <link rel="stylesheet" type="text/css" href="$css"/>
+                        <xsl:element name="link">
+                            <xsl:attribute name="rel">
+                                <xsl:value-of select="'stylesheet'"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="type">
+                                <xsl:value-of select="'text/css'"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="$css"/>
+                            </xsl:attribute>
+                        </xsl:element>
                         <title>
                             <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                         </title>
