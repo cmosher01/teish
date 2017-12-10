@@ -11,6 +11,8 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collections;
+import java.util.Map;
 
 import static spark.Spark.*;
 
@@ -70,7 +72,11 @@ public class XsltServer {
     }
 
     private String text(final String nameXml, final String nameXslt) throws SAXParseException, IOException, URISyntaxException, TransformerException {
-        return getXml(nameXml).transform(readFrom(getResourcePath(nameXslt)));
+        return getXml(nameXml).transform(readFrom(getResourcePath(nameXslt)), full());
+    }
+
+    private Map<String, Object> full() {
+        return Collections.singletonMap("full", true);
     }
 
     private String text(final String nameXml) throws SAXParseException, IOException {

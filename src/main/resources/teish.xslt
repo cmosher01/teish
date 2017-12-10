@@ -2,17 +2,20 @@
 <xsl:stylesheet
     version="3.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all"
 >
     <xsl:output
         omit-xml-declaration="yes"
-        doctype-system="about:legacy-compat"
         method="html"
+        version="5.0"
         media-type="text/html"
         indent="no"
     />
+
+    <xsl:param name="full" as="xs:boolean" select="fn:false()"/>
 
     <!-- identity (copy all elements and attributes) -->
     <xsl:template match="element() | comment() | processing-instruction() | @*" mode="#all">
@@ -48,20 +51,29 @@
 
     <!-- TEI document ==> HTML web page -->
     <xsl:template match="tei:TEI">
-        <html>
-            <head>
-                <meta charset="utf-8"/>
-                <link rel="stylesheet" type="text/css" href="../../teish.css"/>
-                <title>
-                    <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
-                </title>
-            </head>
-            <body>
+        <xsl:choose>
+            <xsl:when test="$full">
+                <html>
+                    <head>
+                        <meta charset="utf-8"/>
+                        <link rel="stylesheet" type="text/css" href="../../teish.css"/>
+                        <title>
+                            <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                        </title>
+                    </head>
+                    <body>
+                        <xsl:copy>
+                            <xsl:apply-templates select="@* | node()"/>
+                        </xsl:copy>
+                    </body>
+                </html>
+            </xsl:when>
+            <xsl:otherwise>
                 <xsl:copy>
                     <xsl:apply-templates select="@* | node()"/>
                 </xsl:copy>
-            </body>
-        </html>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- TEI head ==> HTML header -->
