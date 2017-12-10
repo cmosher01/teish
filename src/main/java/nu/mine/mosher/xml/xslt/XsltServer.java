@@ -17,6 +17,8 @@ import java.util.Map;
 import static spark.Spark.*;
 
 public class XsltServer {
+    private static final Map<String, Object> FULL = Collections.singletonMap("full", true);
+
     private Path teidir;
 
     public static void main(final String... args) throws IOException {
@@ -72,19 +74,19 @@ public class XsltServer {
     }
 
     private String text(final String nameXml, final String nameXslt) throws SAXParseException, IOException, URISyntaxException, TransformerException {
-        return getXml(nameXml).transform(readFrom(getResourcePath(nameXslt)), full());
-    }
-
-    private Map<String, Object> full() {
-        return Collections.singletonMap("full", true);
+        return getXml(nameXml).transform(getXslt(nameXslt), FULL);
     }
 
     private String text(final String nameXml) throws SAXParseException, IOException {
         return getXml(nameXml).toString();
     }
 
-    private SimpleXml getXml(final String nameXml) throws IOException, SAXParseException {
+    private SimpleXml getXml(final String nameXml) throws SAXParseException, IOException {
         return new SimpleXml(readFrom(getLocalPath(nameXml)));
+    }
+
+    private static String getXslt(final String nameXslt) throws IOException, URISyntaxException {
+        return readFrom(getResourcePath(nameXslt));
     }
 
     private Path getLocalPath(final String filename) throws FileNotFoundException {
