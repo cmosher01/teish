@@ -4,15 +4,16 @@ Simple TEI to HTML converter.
 
 ## usage
 
-The XSLT (3.0) transformation (stylesheet) is
-[https://cdn.rawgit.com/cmosher01/teish/1.1/src/main/resources/teish.xslt]
-and the CSS stylesheet is
-[https://cdn.rawgit.com/cmosher01/teish/1.1/src/main/resources/teish.css]
+There are two components of __TEISH__:
 
-Just use it as an XSLT transform on your TEI XML file,
-using your favorite XSLT 3.0 tool.
+* https://cdn.rawgit.com/cmosher01/teish/1.1/src/main/resources/teish.xslt
+* https://cdn.rawgit.com/cmosher01/teish/1.1/src/main/resources/teish.css
 
-The stylesheet is tested using Saxon 9.8 Home Edition
+Use `teish.xslt` to transform your TEI XML file into HTML.
+Use that resulting HTML somewhere in the body of a web page
+that uses `teish.css` to style it correctly.
+
+__TEISH__ is tested using Saxon 9.8 Home Edition
 XSLT 3.0 transformer, and Chromium 62.0 browser.
 
 ## demo
