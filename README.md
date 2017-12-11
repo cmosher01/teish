@@ -6,8 +6,10 @@ Simple TEI to HTML converter.
 
 There are two components of __TEISH__:
 
-* https://cdn.rawgit.com/cmosher01/teish/1.1/src/main/resources/teish.xslt
-* https://cdn.rawgit.com/cmosher01/teish/1.1/src/main/resources/teish.css
+* https://cdn.rawgit.com/cmosher01/teish/1.3/src/main/resources/teish.xslt
+* https://cdn.rawgit.com/cmosher01/teish/1.3/src/main/resources/teish.css
+
+where `1.3` is the version number (see [releases](releases) for the latest release).
 
 Use `teish.xslt` to transform your TEI XML file into HTML.
 Use that resulting HTML somewhere in the body of a web page
