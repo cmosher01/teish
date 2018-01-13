@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc/>
+        <profileDesc>
+            <particDesc>
+                <person xml:id="Sassawwaw"><persName><forename>Sassawwaw</forename></persName></person>
+            </particDesc>
+        </profileDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <body>
+            <p>This deed or writing bearing date this present
+                <date calendar="julian" datingMethod="julian" when-custom="1660-06-29">twenty‐ninth day of June,
+                    one thousand six hundred and sixty</date>,
+                witnesseth, that I, <persName ref="#Sassawwaw">Socho</persName>
+                an Indian Captain of Narraganset, being the true nnd lawful owner of a tract of land
+                called Misquamicoke, for a valuable consideration in hand paid to my content, have bargained and sold unto
+                William Vaughan, Robert Stanton, John Fairfield, Hugh Moshur, James Longbottom, all of Nuport in Rhode‐Island
+                and others their associates, which said tract of land being bounded as followeth, Easterly by a place called
+                Weecapaug or Passpatanage joining to the Nianticut land, on the South by the main sea, on the West by Pawcutuck
+                river, and so up the chief river or stream northerly and northeasterly to a place called Quequatuck or
+                Quequachanocke, and from thence on a straight line to the first named bounds called Wecapoag or Pachatanage
+                joining upon the Nianticut land as abovesaid; which said tract of land so butted and bounded as aforesaid, I the
+                said <persName ref="#Sassawwaw">Socho</persName>
+                do for myself, my heirs, executors, administrators, and assigns, surrender up all right, title, claim
+                or interest whatsoever to the said land or any privilege appertaining to the said land, fully instating the said
+                William Vaughan, Robert Stanton, John Fairfield, Hugh Mosier, James Longbottom and their associates, their
+                heirs, executors, administrators or assigns, to the said land and proprieties thereof, to ihe worlds end. In
+                witness whereof I the said <persName ref="#Sassawwaw">Sosoa</persName>
+                have set to my hand and seal the year and date abovesaid.</p>
+            <p>The mark of <persName ref="#Sassawwaw">SOSOA</persName>.</p>
+            <p>L. S.</p>
+            <list>
+                <head>Sealed signed in presence of</head>
+                <item>JEREMY CLARKE,</item>
+                <item>LATHAM CLARKE,</item>
+                <item>HENRY CLARK,</item>
+                <item>AWASHWASH his mark.</item>
+                <item>The mark W of NUCUM, Interpreter.</item>
+                <item>GEORGE WEBB,</item>
+                <item>GEORGE GARDINER.</item>
+            </list>
+        </body>
+    </text>
+</TEI>

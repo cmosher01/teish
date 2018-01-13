@@ -149,7 +149,7 @@
         </xsl:element>
     </xsl:template>
 
-    <!-- TEI ref target=url ==> HTML a class=teiRef href=url -->
+    <!-- TEI pb ==> HTML hr class=pb title=page:n(type) -->
     <xsl:template match="tei:pb">
         <xsl:element name="hr">
             <xsl:apply-templates select="@*"/>
@@ -162,6 +162,26 @@
                     <xsl:value-of select="fn:concat(' (',@type,')')"/>
                 </xsl:if>
             </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+    <!-- TEI list/head+item ==> HTML dl/dt+dd -->
+    <xsl:template match="tei:list">
+        <xsl:element name="dl">
+            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates mode="list"/>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tei:head" mode="list">
+        <xsl:element name="dt">
+            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tei:item" mode="list">
+        <xsl:element name="dd">
+            <xsl:apply-templates select="@*"/>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
