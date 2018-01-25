@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hugh Mosher Earmark in Portsmouth: a digital transcription</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Christopher A. Mosher, Shelton, CT, USA, 2018.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>Town of Portsmouth (Rhode Island, USA)</author>,
+                    <title level="u">Portsmouth Records, Portsmouth, Rhode Island</title>,
+                    <citedRange>vol. 1 (1638–1700): 225</citedRange>;
+                    <title level="u">Town records, 1638–1850</title>,
+                    FHL microfilm 945,382, DGS 7649106, item 1, image 136 of 586.
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+
+
+    <text xml:lang="en-emodeng">
+        <body>
+            <p>
+                <lb/>Eare marke of Hugh Mosher his Cattell is
+                <lb/><damage type="missing"><supplied>tw</supplied></damage>o
+                hapenis before vpon the Right Eare and one hapeny
+                <lb/><damage type="missing"><supplied>o</supplied></damage>ne
+                the left Eare before of seuen yeares Standinge
+                <lb/>and is Entred vpon Record this
+                <date calendar="julian" datingMethod="julian" when-custom="1668-02-19">
+                    19<hi rend="sup">th</hi> of feburery 1667<lb/>or 68
+                </date>
+                <lb/>By me Richard Bulgar
+                <lb/>Towne Clarke
+            </p>
+        </body>
+    </text>
+</TEI>

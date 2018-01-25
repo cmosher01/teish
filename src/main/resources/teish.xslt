@@ -94,7 +94,7 @@
         </xsl:element>
     </xsl:template>
 
-    <!-- TEI body ==> HTML div type=textBody -->
+    <!-- TEI body ==> HTML div class=textBody -->
     <xsl:template match="tei:body">
         <xsl:element name="div">
             <xsl:apply-templates select="@*"/>
@@ -241,6 +241,28 @@
                 <xsl:value-of select="fn:distinct-values((tei:expan,tei:reg,tei:corr))"/>
             </xsl:attribute>
             <xsl:apply-templates/>
+        </xsl:copy>
+    </xsl:template>
+
+    <!-- TEI supplied ==> HTML [...] -->
+    <xsl:template match="tei:supplied">
+        <xsl:copy>
+            <xsl:apply-templates select="@*"/>
+            <xsl:attribute name="class">
+                <xsl:value-of select="'editorial'"/>
+            </xsl:attribute>
+            <xsl:attribute name="title">
+                <xsl:value-of select="fn:local-name()"/>
+                <xsl:if test="@*">
+                    <xsl:value-of select="': '"/>
+                    <xsl:for-each select="@*">
+                        <xsl:value-of select="fn:concat(fn:local-name(),'=',.,' ')"/>
+                    </xsl:for-each>
+                </xsl:if>
+            </xsl:attribute>
+            <xsl:value-of select="'['"/>
+            <xsl:apply-templates/>
+            <xsl:value-of select="']'"/>
         </xsl:copy>
     </xsl:template>
 

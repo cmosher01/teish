@@ -2,7 +2,7 @@ teiHeader {
     display: none;
 }
 
-div.textDiv {
+div.textDiv, div.textBody {
     display: inline;
 }
 
@@ -16,6 +16,15 @@ lb::before {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+[rend~=italic] {
+    font-style: italic;
+}
+
+[rend~=underline] {
+    text-decoration: underline;
+    text-decoration-skip: ink;
 }
 
 [rend~=sup], [type=turnover] {
