@@ -186,6 +186,26 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- TEI table/row/cell ==> HTML table/tr/td -->
+    <xsl:template match="tei:table">
+        <xsl:element name="table">
+            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates mode="table"/>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tei:row" mode="table">
+        <xsl:element name="tr">
+            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates mode="table_row"/>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tei:cell" mode="table_row">
+        <xsl:element name="td">
+            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
     <!-- TEI fw type ==> HTML fw title -->
     <xsl:template match="tei:fw[@type]">
         <xsl:copy>

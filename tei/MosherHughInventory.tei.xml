@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hugh Mosher Estate Inventory in Dartmouth: a digital transcription</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Christopher A. Mosher, Shelton, CT, USA, 2018.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>County of Bristol (Massachusetts, USA)</author>,
+                    <title level="u">[Probate] Records, No. 3, 1710–1721</title>,
+                    <citedRange>173, inventory, Hugh Mosher, recorded 8 Dec 1713</citedRange>;
+                    digital images, <title level="u">Probates, v. 1–4 1687–1723</title>,
+                    FHL microfilm 461,882, DGS 7703530, item 3, image 404 of 745.
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc/>
+    </teiHeader>
+    <text xml:lang="en-emodeng">
+        <body>
+
+            <pb n="173"/>
+            <fw type="pageNum" place="top left margin">173</fw>
+
+            <p>
+                <lb/>A true Inventory of all &amp; singular the Goods Chattels &amp; Credits of
+                <lb/>Hugh Mosher of the Town of Dartmouth yeoman Deceased praised
+                <lb/>in Dartmouth this
+                <date calendar="julian" datingMethod="julian" when-custom="1713-11-10">
+                    Tenth day of Nouember <hi rend="underlin">1713</hi>
+                </date>
+                by Ionathan Davil
+                <lb/>and Ebenezer Tripp the subscribers as it was presented to their
+                <lb/>veiw and in the Possession of Sarah Mosher and by her she<unclear>w</unclear>ed
+                <lb/>to vs &amp; apprised as followeth <pc>— — — — — — —</pc>
+            </p>
+
+            <head place="left margin"><choice><abbr>Imp<hi rend="sup">rs</hi></abbr><expan>Imprimis</expan></choice>—</head>
+            <table>
+                <row><cell>His Purss &amp; weering Apparrill</cell><cell>008</cell><cell>08</cell><cell>06</cell></row>
+                <row><cell>To Debts due by bonds from persons in the Colony
+                    <lb/>of Rhode Island Amounting to the sum of <pc>— }</pc></cell><cell>133</cell><cell>04</cell><cell>08</cell></row>
+                <row><cell>Bibles and other Bookes all at <pc>— —</pc></cell><cell>003</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>To money due in the hands of his Attorrny Daniel
+                    <lb/>Sebeere of Newport<pc>— — — — — }</pc></cell><cell>010</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>His Dwelling house and land belonging to it at <pc>—</pc></cell><cell>080</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>To 2 Cowes at <pc>— — — — — — —</pc></cell><cell>008</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>To a horse at <pc>— — — — — — — —</pc></cell><cell>005</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>To a percell of Hay at <pc>— — — — — —</pc></cell><cell>001</cell><cell>05</cell><cell>00</cell></row>
+                <row><cell>To three Swine at <pc>— — — — — —</pc></cell><cell>001</cell><cell>10</cell><cell>00</cell></row>
+                <row><cell>To Carpenters Tools and a percell of old Iron <pc>—</pc></cell><cell>005</cell><cell>10</cell><cell>00</cell></row>
+                <row><cell>Bed steads Corn and Tobacca <pc>— —</pc></cell><cell>001</cell><cell>07</cell><cell>00</cell></row>
+                <row><cell>To a few shovel &amp; two pair of Tongs &amp; 3 tramels
+                    <lb/>&amp; two iron Polls and Kettle at <pc>— — — — }</pc></cell><cell>001</cell><cell>06</cell><cell>00</cell></row>
+                <row><cell>To a pair of Stillards and a spit at<pc>—</pc></cell><cell>001</cell><cell>13</cell><cell>00</cell></row>
+                <row><cell>To a percell of Pewter and Brass &amp; one lanthorn at <pc>—</pc></cell><cell>002</cell><cell>15</cell><cell>00</cell></row>
+                <row><cell>To Beding <pc>— — — — — — — — — —</pc></cell><cell>005</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>silluer plate all at<pc>— — — — — — —</pc></cell><cell>005</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>To a Chest a Desk &amp; scales &amp; weights <pc>— — —</pc></cell><cell>001</cell><cell>10</cell><cell>00</cell></row>
+                <row><cell>To Tables Chaires &amp; a forme at <pc>— — — —</pc></cell><cell>001</cell><cell>03</cell><cell>00</cell></row>
+                <row><cell>To a Warming Pann Looking Glass and a Morter <pc>— —</pc></cell><cell>000</cell><cell>14</cell><cell>00</cell></row>
+                <row><cell>To a percell of Bar<hi rend="sup">lls</hi>. wheeles Tubbs &amp; a sadle <pc>— —</pc></cell><cell>001</cell><cell>04</cell><cell>00</cell></row>
+                <row><cell>To a percell of Glass Bottles <pc>— — — — —</pc></cell><cell>000</cell><cell>01</cell><cell>00</cell></row>
+                <row><cell>To a Grindston at <pc>— — — — — — — —</pc></cell><cell>000</cell><cell>15</cell><cell>00</cell></row>
+                <row><cell>An acco<hi rend="sup">t</hi> of what moueable estate he had w<hi rend="sup">th</hi> his wife
+                    <lb/>in Marriage and Brot to Dartmouth is as followeth</cell><cell/><cell/><cell/></row>
+                <row><cell>To a bed and beding and furniture &amp; Bedsteed <pc>— —</pc></cell><cell>008</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>To a Case of Drawers a Trunk and a Chest at <pc>—</pc></cell><cell>002</cell><cell>00</cell><cell>00</cell></row>
+                <row><cell>To fiue Earthen Panns &amp; one Earthen plate <pc>— —</pc></cell><cell>000</cell><cell>04</cell><cell>00</cell></row>
+                <row><cell>To two pewter plates &amp; three pewter platters Two
+                    <lb/>Porringers a pewter bason 2 old Chamberpotts &amp; a skillett <pc>}</pc></cell><cell>001</cell><cell>04</cell><cell>00</cell></row>
+                <row><cell>To an Iron <add place="above" indicator="^">Pot</add> Pot hooks
+                    three washing Tubbs &amp; 2 meat <unclear>Car<hi rend="sup">bls</hi></unclear></cell><cell>030</cell><cell>13</cell><cell>00</cell></row>
+                <row><cell>This Inventory Amounting to the sum of Two Hundred
+                    <lb/>&amp; Ninety pounds seventeen shillings &amp; Two pence
+                    <lb/>errors excepted apprized as abouesaid by us Ionath Davel
+                    <lb/>Ebenezer Tripp</cell><cell>290</cell><cell>17</cell><cell>02</cell></row>
+            </table>
+
+            <p>
+                <lb/>Bristol ss
+                <date calendar="julian" datingMethod="julian" when-custom="1713-12-07">
+                    Decembe<hi red="sup">r</hi>
+                    <w xml:id="the"><choice><abbr>þ<hi rend="sup">e</hi></abbr><expan>the</expan></choice></w>
+                    7<hi rend="sup">th</hi> 1713
+                </date>
+                in Bristol
+                <lb/>Then Iames Mosher and Daniel Sabeer executors of the last
+                <lb/>will and Testament of
+                <w xml:id="mister"><choice><abbr>M<hi rend="sup">r</hi></abbr><expan>Mister</expan></choice></w>
+                Hugh Mosher late of Dartmouth Deceased
+                <lb/>Before the Hon<hi rend="sup">rable</hi> Natha<hi rend="sup">l</hi> Paine Esq<hi rend="sup">r</hi>
+                Iudge of Probate <phr xml:id="andc"><choice><abbr>&amp;c</abbr><expan xml:lang="la">et cetera</expan></choice></phr> within
+                <lb/>the County abouesd And made Oath that the Inventory aboue written
+                <lb/>containes the whole of that estate the sd Deceased Dyed seizedof &amp;
+                <lb/>is come to their knowle<add place="avove">d</add>ge
+                &amp; when they know of any more they
+                <lb/>will Reveal it <phr copyOf="#andc"/>
+                <list>
+                    <item>Natha<hi rend="sup">l</hi> Paine</item>
+                    <item>Iohn Cary Register</item>
+                </list>
+            </p>
+
+            <p>
+                <lb/>Entered
+                <date calendar="julian" datingMethod="julian" when-custom="1713-12-08">
+                    Decem<unclear reason="inkblot"><supplied>b</supplied></unclear><hi red="sup">r</hi>
+                    8<hi rend="sup">th</hi> <hi rend="underline">1713</hi>
+                </date>
+                <lb/>By Iohn Cary Register
+            </p>
+
+        </body>
+    </text>
+</TEI>
