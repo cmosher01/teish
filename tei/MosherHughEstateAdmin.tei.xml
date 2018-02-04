@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hugh Mosher, Account of Estate Administration in Dartmouth: a digital transcription</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Christopher A. Mosher, Shelton, CT, USA, 2018.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>County of Bristol (Massachusetts, USA)</author>,
+                    <title level="u">[Probate] Records, No. 3, 1710–1721</title>,
+                    <citedRange>220–1, account of administration, Hugh Mosher, recorded 6 Jun 1715</citedRange>;
+                    digital images, <title level="u">Probates, v. 1–4 1687–1723</title>,
+                    FHL microfilm 461,882, DGS 7703530, item 3, images 433–4 of 745.
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc/>
+    </teiHeader>
+<text xml:lang="en-emodeng">
+<body>
+
+<pb n="220"/>
+<fw type="pageNum" place="top right margin">220</fw>
+
+<p>
+<lb/>The Accompt of Iames Mosher of Dartmouth in the County of Bristol
+<lb/><phr xml:id="andc"><choice><abbr>&amp;c</abbr><expan xml:lang="la">et cetera</expan></choice></phr>:
+and Daniel Sabeers of newport on Rhod Island in his Majesties Col
+<lb break="no"/><pc force="weak">=</pc>lony of Rhode Island <phr copyOf="#andc"/>:
+Executors to the last will &amp; Testament of Hugh <pc>—</pc>
+<lb/>Mosher late of dartmouth deceased <del rend="strikethrough">as well of and for so</del> and executors
+<lb/>of all &amp; singuler the Goods and chattells of Hugh Mosher aforeseid
+<lb/>Deceased as well of and for such &amp; so much of the same Goods &amp; Chattell<supplied>s</supplied>
+<lb/>as come to their hands as of and for their payments &amp; disbursments
+<lb/>out of the same as followeth <phr copyOf="#andc"/>
+</p>
+
+<table>
+    <row><cell/><cell>£</cell><cell>s</cell><cell>d</cell></row>
+    <row><cell>The said Accomptants chargeth themselues with all &amp;
+        <lb/>singuler the goods and chattells of the sd Deceased specifyed
+        <lb/>in an Inventory thereof made and exhibitted into
+        <w xml:id="the"><choice><abbr>þ<hi rend="sup">e</hi></abbr><expan>the</expan></choice></w>
+        <lb/>Reg<hi rend="sup">r</hi> office for the County of Bristol
+        <date calendar="julian" datingMethod="julian" when-custom="1713-12-07">
+            decemb<hi rend="sup">r</hi> 7<hi rend="sup">th</hi> <hi rend="underline">1713</hi>
+        </date>
+        <lb/><gap/> and bears date
+        <date calendar="julian" datingMethod="julian" when-custom="1713-11-10">
+            10 of nouemb<hi rend="sup">r</hi> 1713
+        </date>
+        amounting as by
+        <lb/>the same Inventory appeareth to the sum of
+        </cell><cell>290</cell><cell>17</cell><cell>02</cell></row>
+    <row><cell>And petitions for allowance as followeth
+        <lb/><choice><abbr>Imp<hi rend="sup">rs</hi></abbr><expan>Imprimis</expan></choice>
+        the sd accomptants desire Allowance of the
+        <lb/>several charges of the sd deceased as followeth <unclear>as</unclear>
+        <lb/>and by them payd and disbursted
+        <choice><abbr>vi⁊<hi rend="sup">t</hi></abbr><expan xml:lang="la">videlicet</expan></choice>
+        </cell><cell/><cell/><cell/></row>
+    <row><cell>
+        <lb/>The Charges of the Probate of his will and for fune
+        <lb break="no"/>rall expenses :
+        <date calendar="julian" datingMethod="julian" when-custom="1713-12-07">
+            Decemb<hi rend="sup">r</hi> 7<hi rend="sup">th</hi> 1713
+        </date>
+        payd to Collonel Paine
+        <lb/>Iudge of probate by daniel Sabeers
+        </cell><cell>000</cell><cell>03</cell><cell>06</cell></row>
+    <row><cell>
+        <date calendar="julian" datingMethod="julian" when-custom="1713-12-08">
+        December the 8<hi rend="sup">th</hi>
+        <hi rend="underline"><choice><sic>1715</sic><corr>1713</corr></choice></hi>
+        </date>
+        payd to m<hi rend="sup">r</hi> Cary Regist by
+        <lb/>Iames Mosher<pc>— — — } —</pc>
+        </cell><cell>000</cell><cell>11</cell><cell>00</cell></row>
+    <row><cell>
+        <date calendar="julian" datingMethod="julian" when-custom="1713-12-12">
+        December the 12<hi rend="sup">th</hi>: 1713
+        </date>
+        payd to Iohn Bayly Iun<hi rend="sup">r</hi> one of
+        <lb/>the witnesses to the sd will for his goeing to Bristol &amp;
+        <lb/>his horss and Feriage by daniel Sabeers<pc>— — — }</pc>
+        </cell><cell>000</cell><cell>13</cell><cell>02</cell></row>
+    <row><cell>
+        payd to Samuel Roades one of the wittnesses goeing to
+        <lb/>Bristol two dayes and horss hire by daniel Sabeers<pc>— }</pc>
+        </cell><cell>000</cell><cell>14</cell><cell>00</cell></row>
+    <row><cell>
+        payd to Iohn Stanton for his horss hyre to Iohn Sabeers
+        <lb/>one of the witnesses to goe to Bristol by Daniel Sabeers<pc>}</pc>
+        </cell><cell>000</cell><cell>04</cell><cell>00</cell></row>
+    <row><cell>
+        payd to Iohn Sabeers one of the witnesses goeing to
+        <lb/>Bristoll by daniel Sabeers<pc>— — — — — — }</pc>
+        </cell><cell>000</cell><cell>07</cell><cell>06</cell></row>
+    <row><cell>
+        payd for the Frriage for Iohn Sabeer and Samuel
+        <lb/>Rhodes by daniel Sabeers<pc>— — — — }</pc>
+        </cell><cell>000</cell><cell>01</cell><cell>04</cell></row>
+    <row><cell>
+        payd the Ferrey man by Iames Moshers desire <w copyOf="#the"/> sum of
+        <lb/>for his ferriage and his brother Ioseph &amp; for drink on <w copyOf="#the"/>
+        <lb/>account of the wittnesses by daniel Sabeers<pc>— — }</pc>
+        </cell><cell>000</cell><cell>02</cell><cell>03</cell></row>
+    <row><cell>
+        payd to Iabez Howland for what was expended for us
+        <lb/>&amp; the witnesses and bondsmen while at Bristol by
+        <lb/>Daniel Sabeers<pc>— — — — — — — }</pc>
+        </cell><cell>001</cell><cell>02</cell><cell>08</cell></row>
+    <row><cell>
+        payd to Iohn Greenman for my horss Hyre to goe to
+        <lb/>Dartmouth and Bristo<supplied reason="omitted-in-original">l</supplied>
+        to take an Inventory to proue sd will
+        <lb/>payd by Daniel Sabeers<pc>— — — — — — }</pc>
+        </cell><cell>000</cell><cell>09</cell><cell>00</cell></row>
+    <row><cell>
+        I payd for me daniel Sabeers for my ferriage to
+        <lb/>Dartmouth &amp; Bristol &amp; back againe &amp; expence
+        abo<hi rend="sup">t</hi> <w copyOf="#the"/> estate
+        <lb/>in taken an Inventory<pc>— — — — — — —</pc>
+        </cell><cell>000</cell><cell>02</cell><cell>09</cell></row>
+    <row><cell>
+        To three pound of suger for his funiroll payd widow Mosher
+        </cell><cell>000</cell><cell>02</cell><cell>00</cell></row>
+    <row><cell>
+        To m<hi rend="sup">r</hi> Tripp digging his grave<pc>— — — — —</pc>
+        </cell><cell>000</cell><cell>03</cell><cell>00</cell></row>
+    <row><cell>
+        To making his coffin for him
+        </cell><cell>0..</cell><cell>..</cell><cell>..</cell></row>
+    <row><cell>
+        Carryed over <w copyOf="#the"/> sum of
+        </cell><cell>004</cell><cell>16</cell><cell>02</cell></row>
+</table>
+<fw type="folioNum">142</fw>
+
+<pb n="221"/>
+<fw type="pageNum" place="top left margin">221</fw>
+
+<table>
+    <row><cell/><cell>£</cell><cell>s</cell><cell>d</cell></row>
+    <row><cell>
+        Brought over from the other side the sum of<pc>—</pc>
+        </cell><cell>004</cell><cell>16</cell><cell>02</cell></row>
+    <row><cell>
+        Then the Accomptants desireth allowance of certain
+        <lb/>Debts due by <w copyOf="#the"/> Deceased at his death
+        w<hi rend="sup">ch</hi> they haue since
+        <lb/>his death payd and discharged as followeth
+    </cell><cell/><cell/><cell/></row>
+    <row><cell>
+        To money payd Iosiah Bliss by Daniel Sabeers
+        <lb/>the sum of <pc>— — — — — — — — — — }</pc>
+        </cell><cell>000</cell><cell>02</cell><cell>04</cell></row>
+    <row><cell>
+        To money payd for Taxes Levyed on his estate in
+        <lb/>Dartmouth since his Death payd by Iames Mosher <w copyOf="#the"/> sum
+        </cell><cell>000</cell><cell>17</cell><cell>00</cell></row>
+    <row><cell>
+        Payd Ioseph Tillinghast in full of all accounts of my
+        <lb/>father by me Iames Mosher the sum of<pc>— — }</pc>
+    </cell><cell>000</cell><cell>13</cell><cell>06</cell></row>
+    <row><cell>
+        Payd to George Lawton in full of all accounts due
+        <lb/>from my father the sum of <pc>— — — — —</pc>
+        </cell><cell>000</cell><cell>13</cell><cell>08</cell></row>
+    <row><cell>
+        payd to Iohn Mosher for a debt due from my father
+        <lb/>by me Iames Mosher the sum of <pc>— — —</pc>
+        </cell><cell>001</cell><cell>26</cell><cell>00</cell></row>
+    <row><cell>
+        payd Samual Tewel for my horss hyre to goe to
+        <lb/>Bristol to giue an acco<hi rend="sup">t</hi>
+        of my administ<hi rend="sup">con</hi> by me daniel
+        <lb/>Sabeers <pc>— — — — — — — — }</pc>
+        </cell><cell>000</cell><cell>05</cell><cell>00</cell></row>
+    <row><cell>
+        payd for my Ferriage &amp; expence while there at Bristol
+        <lb/>upon <w copyOf="#the"/> account of my
+        Administ<hi rend="sup">con</hi> &amp; expense at <w copyOf="#the"/> Ferry
+        <lb/>till I got over by daniel Sabeers <pc>— — — —</pc>
+        </cell><cell>000</cell><cell>05</cell><cell>03</cell></row>
+    <row><cell>
+        payd to m<hi rend="sup">r</hi> Cary Reg<hi rend="sup">r</hi>
+        for a coppy of the record &amp;
+        <lb/>recording the order of the Iudge of Probates for
+        <lb/>further time to make up our accounts by
+        dan<hi rend="sup">l</hi> Sabeers
+        </cell><cell>000</cell><cell>01</cell><cell>00</cell></row>
+    <row><cell>
+        To my horss Hyre and comeing to Bristol the
+        <lb/>second time to giue an acount of our Administ<hi rend="sup">con</hi>
+        <lb/>by daniel Sabeers<pc>— — — — — —</pc>
+        </cell><cell>000</cell><cell>04</cell><cell>00</cell></row>
+    <row><cell>
+        To Daniel Sabeers Ferrage &amp; expence in comeing
+        <lb/>about the same<pc>— — — — — — —</pc>
+        </cell><cell>000</cell><cell>00</cell><cell>11</cell></row>
+    <row><cell>
+        <date calendar="julian" datingMethod="julian" when-custom="1715-06-06">
+            Iune <w copyOf="#the"/> 6 : 1715
+        </date>
+        then signed by us : Iames Mosher
+        <lb/>Daniel Sabeers
+    </cell><cell>009</cell><cell>11</cell><cell>10</cell></row>
+    <row><cell>
+        To allowing <gap/> and <sic>Registeing</sic> the account<pc>—</pc>
+        </cell><cell>000</cell><cell>10</cell><cell>00</cell></row>
+    <row><cell/><cell>010</cell><cell>01</cell><cell>10</cell></row>
+</table>
+
+<p>
+<lb/>Bristol ss: <pc>— —</pc>
+<date calendar="julian" datingMethod="julian" when-custom="1715-06-06">
+    Iune <w copyOf="#the"/> 6 : 1715
+</date>
+</p>
+<p>
+<lb/>By the Hon<hi rend="sup underline">rable</hi> Natha<hi rend="sup">l</hi>
+Paine Iudge of Probates <choice><abbr>&amp;c</abbr><expan xml:lang="la">et cetera</expan></choice>
+<lb/>m<hi rend="sup">r</hi> Iames Mosher &amp; m<hi rend="sup">r</hi> Daniel Sabeers presented the aboue
+<lb/>written and made Oath that it containe a Iust &amp; true accompt
+<lb/>of their Administ<hi rend="sup">con</hi> on the estate of
+m<hi rend="sup">r</hi> Hugh Mosher lat of
+<lb/>dartmouth deceased so far as they haue proceeded which account
+<lb/>accordingly I do allow and Approue off
+<lb/>Iurr<hi rend="sup">t</hi> Coram Natha<hi rend="sup">l</hi> Paine
+</p>
+<p>
+<lb/>Entered
+<date calendar="julian" datingMethod="julian" when-custom="1715-06-06">
+    Iune the 6 : 1715
+</date>
+<lb/>By Iohn Cary Reg<hi rend="sup">r</hi>.
+</p>
+</body>
+</text>
+</TEI>
