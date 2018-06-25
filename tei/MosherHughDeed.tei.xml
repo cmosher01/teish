@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hugh Mosher to Henry Brightman, Deed: a digital transcription</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Christopher A. Mosher, Shelton, CT, USA, 2018.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>Colony of Rhode Island (America)</author>,
+                    <title level="u">Rhode Island Land Records</title>,
+                    <citedRange>1: 398–9, deed, Hugh Mosher to Henry Brightman, recorded 30 Jan 1689/90</citedRange>;
+                    digital images,
+                    <title level="u">Land records [of Rhode Island]—vol. 1–3 1648–1721</title>
+                    FHL microfilm 947,370, DGS 7902110, item 2, image 313 of 726.
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc/>
+    </teiHeader>
+
+<text xml:lang="en-emodeng">
+<body>
+
+<pb n="398"/>
+<fw type="pageNum" place="top center margin">
+    <pc>(</pc>398<pc>)</pc>
+</fw>
+
+<ab>
+<lb/>To all Peopele tow home these presents shall come I
+<lb/>Hugh moger of portsmouth in the Collony of Rhoad Island
+<lb/>&amp; prouidence Plantations in new England in Amarica Black
+<lb/>Smith Send Greeting Know yee that I the said Hugh moger
+<lb/>for And in Consideration of
+<w xml:id="the"><choice><abbr>þ<hi rend="sup">e</hi></abbr><expan>the</expan></choice></w>
+Sume of two hundred And
+<lb/>thirty pounds in mony to mee in hand <subst><del>payd</del><add type="overwrite">allready</add></subst> payd
+<lb/>by henry Brightman of portsmouth in <w copyOf="#the"/> Collony A
+<lb break="no"/>fore saide the receipt of which Said Sume I doe heare
+<lb break="no"/>by Acknowledg And heare with doe owne my selfe fully
+<lb/>Sattisfide Contented &amp; payd haue giuen granted Bargained
+<lb/>And Sold Alinated enfeoffed &amp; Confirmed And by these
+<lb/>presents for mee my heires Executo<hi rend="sup">r</hi>s And Administrato<hi rend="sup">r</hi>s doe
+<lb/>fully Clearly And Absoluttly give grant bargaine Sell Aliene
+<lb/>Enfeofe &amp; Confirme vnto <w copyOf="#the"/> Said Henry brightman his <sic>heire</sic>
+<lb/>And Assignes for euer Acertain Tract or parciell of Land Scituate
+<lb/>Lying And being part in <w copyOf="#the"/> township of portsmouth Afore said And part
+<lb/>In new port bounds containing by Estamation thirty Eight Acers be it more
+<lb/>or Less And is bounded northward by Land of Iohn vahan Eastward by partly
+<lb/>by Apeace of Land of Daniell Lawton, Called hunting Swampe &amp; partly by
+<lb/>the Common Southwardly partly by <w copyOf="#the"/> Common &amp; partly by Land of witherington,
+<lb/>westwardly by the Common Together with
+all &amp; <w xml:id="singular">Singulu<hi rend="sup">r</hi></w> <w copyOf="#the"/>
+fences Comons
+<lb/>Leberties ways high ways priuiledges And Appurtanances on <w copyOf="#the"/> Said Lands
+<lb/>being or to <w copyOf="#the"/> Same or Any part or parciell thare of belonging or in Any wise
+<lb/>Appertaining together with all the dwelling housses Barnes Orchards Stables
+<lb/>out houses &amp; w<hi rend="sup">t</hi>soeuer else belongs thareto To haue &amp; to hold the Said Lands
+<lb/>&amp; housses together with all &amp; <w copyOf="#singular"/> <w copyOf="#the"/> premices Aboue by these presents
+<lb/>granted vnto him <w copyOf="#the"/> Said henry Brightman his heires And Assignes to the
+<lb/>Onely proper use And behoofe of him the Said henry Brightman his heirs
+<lb/>And Assignes for euer And I the Said Hugh moger the Said Land together
+<lb/>with all &amp; <w copyOf="#singular"/> <w copyOf="#the"/> premices Aboue by these presents granted vnto him
+<lb/><w copyOf="#the"/> said Henry Brightman his heirs And Assignes Against mee my heires
+<lb/>And Assignes will warrant And for Euer defend by these presents And
+<lb/>I the said Hugh mosher for mee my heires Executo<hi rend="sup">r</hi>s &amp; Administrato<hi rend="sup">r</hi>s
+<lb/>&amp; for Euery of vs doe heare by Couenant &amp; promis to &amp; with <w copyOf="#the"/> said Henry
+<lb/>Brightman his heires And Assignes &amp; to &amp; with Euery of them that I the
+<lb/>Said Hugh mosher am seized of <w copyOf="#the"/> Said Land &amp; Euery part &amp; parciell thare
+<lb break="no"/>of together with all &amp; <w copyOf="#singular"/> <w copyOf="#the"/>
+primices Aboue by these presents
+<lb/>granted : of A good Sure Lawfull Absolutt &amp; indfeazable estate of
+<lb/>In herritance in Fee scimple And haue full power good right
+<lb/>&amp; Lawfull Authority to grant Asine Bargain Sell &amp; Confirme the
+<lb/>Same to him <w copyOf="#the"/> Said Henry Brightman his heires &amp; assignes in manno<hi rend="sup">r</hi>
+<lb/>&amp; forme Afore Said And that <w copyOf="#the"/> Said Land And Euery part And
+
+<pb n="399"/>
+<fw type="pageNum" place="top center margin">
+    <hi rend="underline">399</hi>
+</fw>
+
+<lb/>Parsiell thare of Together with all &amp; <w copyOf="#singular"/> <w copyOf="#the"/> Aboue bargained <pc>—</pc>
+<lb/>p<hi rend="sup">r</hi>eremices Shall for euer heare After be And remaine vnto him the said
+<lb/>Henry Brightman his heires And Assigns fully And Clearly Exonerated
+<lb/>Acquitted And Discharged of &amp; from all &amp; All manno<hi rend="sup">r</hi> of former bargains
+<lb/>Sales gifts grants Leases mortgages Ioyntures Dowers &amp; Demands And
+<lb/>of And from all Other Charges Titles Trobells &amp; Incumberances
+<lb/>whatsoeuer had made or done or to be had made or done by mee
+<lb/>the Said Hugh Mosher or by Any Other person or parsons whatso
+<lb break="no"/>Euer by my meanes title or procurement In Whittness whareof
+<lb/>I the Said Hugh mosher haue heare vnto Sett my hand &amp; Seall
+<lb/>as Allso Rebeckah mosher the wife of mee the said Hugh mosher
+<lb/>In testimony of her full &amp; free Consent to these presents And that
+<lb/><w copyOf="#the"/> Land &amp; Euery part &amp; parciell thare of together with all And
+<lb/><w copyOf="#singular"/> <w copyOf="#the"/> Aboue Bargained premices Shall for Euer hearafter
+<lb/>be remaine &amp; Continue vnto him <w copyOf="#the"/> Said Henry Brightman
+<lb/>his heires And Assignes free &amp; Clear without Any Claime of
+<lb/>Ioynture Dower Thirds or Any Other Demand to be made by
+<lb/>her <w copyOf="#the"/> said Rebeckah mosher of her Assignes hath heare vnto
+<lb/>Sett their hands &amp; Sealls
+<date calendar="julian" datingMethod="julian" when-custom="1690-01-28">
+the twenty eight day of January<lb/>In
+<date datingMethod="EnglandRegnalYear" when-custom="1 Willam and Mary">
+<w copyOf="#the"/> first year of <w copyOf="#the"/> reigne of william &amp; mary of Eng Land
+<lb/>Scott Land france &amp; Ire Land the King &amp; Quene
+</date>
+and in <w copyOf="#the"/> year of<lb/>the Lord One thousand six hundred Eighty nine
+</date>
+</ab>
+<list>
+    <item>Hugh Mosher</item>
+    <item>the mark R of Rebeckah Mosher</item>
+</list>
+
+<list>
+    <head>Signed Sealled &amp; Deliuered<lb/>In presence of</head>
+    <item>Peleg Trip</item>
+    <item>Thomas Cornell</item>
+    <item>Iohn Yelthro :</item>
+</list>
+
+<p>
+<lb/>Hugh &amp; Rebeckah mosher Came before mee <w copyOf="#the"/>
+<date calendar="julian" datingMethod="julian" when-custom="1690-01-30">
+30<hi rend="sup">th</hi> day<lb/>of Ianuary 1689/90
+</date>
+&amp; owned <w copyOf="#the"/> Aboue written Instrument
+<lb/>to be their Act &amp; deede <sic>Subcribed</sic> with their hands &amp; sealls
+<lb/>Affixed Attest.
+<lb/>John Coggeshall Dep<hi rend="sup">ty</hi> Gov<hi rend="sup">r</hi>
+</p>
+
+<p>
+<lb/>The before &amp; Aboue Written is Atrue Coppy
+<lb/>of <w copyOf="#the"/> Origanall Compared &amp; Recorded by
+<lb/><choice><abbr>Wes<hi rend="sup">t</hi></abbr><expan>Weston</expan></choice> Clarke Record<hi rend="sup">r</hi>
+</p>
+
+<fw type="folioNum">197</fw>
+
+</body>
+</text>
+
+</TEI>

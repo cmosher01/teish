@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hugh Mosher Estate Quitclaim to William Champlin: a digital transcription</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Christopher A. Mosher, Shelton, CT, USA, 2018.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>Town of Westerly (Rhode Island, USA)</author>,
+                    <title level="u">Town Records, Land Evidence, Town of Westerly</title>,
+                    <citedRange>vol. 2 (1707–1717): stamped spread no. 143, quitclaim deed,
+                        John and James Mosher to William Champlin, recorded 4 Jun 1714</citedRange>;
+                    digital images, <title level="u">Land evidence [Westerly, Rhode Island] vol. 1–3 1661–1728</title>,
+                    FHL microfilm 940,222, DGS 7896694, item 5, image 618 of 911.
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc/>
+    </teiHeader>
+
+    <text xml:lang="en-emodeng">
+        <body>
+            <pb n="143"/>
+            <fw type="pageNum" place="top left margin">143</fw>
+            <ab>
+                <lb/>know all men by these
+                <w xml:id="presents">p<hi rend="sup">re</hi>sents</w> that wee Iohn mosure &amp; Iames mosure
+                <lb/>both of the towne of dartmouth in
+                <w xml:id="the"><choice><abbr>þ<hi rend="sup">e</hi></abbr><expan>the</expan></choice></w>
+                county of bristoll in <w copyOf="#the"/> porince of the
+                <lb/>masachusets bay in new england being sons of hugh moser of saide
+                <lb/>dartmouth of late desceasd &amp;c. know yee that for and in considration
+                <lb/>of the sum of fiue pounds of current mony of sd new England allrea
+                <lb break="no"/>dy Receiued and to us in hand well &amp; truly paid by william champlin of
+                <lb/>the towne of westerle in the collony of Rhoad island and priuidence planta
+                <lb break="no"/>tions in new England the Receipt of which said sum of fiue pounds wee
+                <lb/><unclear>doe</unclear> owne and acknowlidg our selues to be therwith fully satisfied contented
+                <lb/>and paid and of Euery part and parcell therof doe acquitt Exonerate
+                <lb/>&amp; discharg the sd william champlin his heires Executors and administr
+                <lb break="no"/>ators by these <w copyOf="#presents"/>: wee haue therfore giuen granted surrendered
+                <lb/>up and by these <w copyOf="#presents"/> giue grant surendred up and quit all our
+                <lb/>claime in &amp; to all the undeuided land which was our fathers Hugh
+                <lb/>mosher Deseased of late as aboue sd which now belongs to us in that
+                <lb/><unclear>trakt</unclear> of land which was purchised of
+                cap<hi rend="sup">t</hi> soso in squamacutt in the
+                <lb/>Towne of westerly in the collony of Rhoad island as aboue sd which our
+                <lb/>sd father hugh mosher was a purchiser: from us our heires Executors
+                <lb/>&amp; administrators unto <w copyOf="#the"/> sd william champlin his heires Executors <pc>—</pc>
+                <lb/>administrators &amp; assignes for euer and wee the sd Iohn mosher &amp; Iames
+                <lb/>moshure Doe farther quitt claime &amp; giue up all our rights in all <w copyOf="#the"/>
+                <lb/>seader swamps meadows &amp; other swamps &amp; preuelidgs &amp; apurtnances
+                <lb/>what so euer that is in the aboue sd purches that belonge to us from
+                <lb/>us our heires Executors &amp; administrators unto the said william cham
+                <lb break="no"/>plin his heires Executors administrators &amp; assignes for Euer &amp; by these
+                <lb/><w copyOf="#presents"/> in witnes wherof and all &amp; singuler herein contained wee the
+                <lb/>sd Iohn moshure &amp; the said Iames mosure haue here unto sett out
+                <lb/>hands &amp; seales
+                <date calendar="julian" datingMethod="julian" when-custom="1714-06-02">
+                    the second day of Iune in the year of our Lord one
+                    <lb/>thousand seuen hundred &amp; fourteene and in
+                    <date datingMethod="EnglandRegnalYear" when-custom="13 Anne">
+                        the thirteenth year
+                        <lb/>of her majesties Reigne
+                    </date>
+                </date>
+                &amp;c<hi rend="sup">r</hi> <pc>⁓ ⁓ ⁓ ⁓ ⁓ ⁓</pc>
+                <list>
+                    <item>the mark of Iohn X mosher seal</item>
+                    <item>Iames mosher seal</item>
+                </list>
+            </ab>
+            <ab>
+                <lb/>signed sealed &amp; deleuered
+                <lb/>In the presence of
+                <list>
+                    <item>the mark of Sarah S R Richmond</item>
+                    <item>Edwd Richmond</item>
+                </list>
+            </ab>
+            <ab>
+                <lb/>bristoll ss the aboue named Iohn mosher &amp; Iames mosher
+                <lb/>both personally appearing befor me the subscriber &amp; ackn
+                <lb break="no"/>owledged this aboue written instrument to be their free
+                <lb/>actt &amp; deed this
+                <date calendar="julian" datingMethod="julian" when-custom="1714-06-02">
+                    second day of Iune annoque domini
+                    <hi rend="underline">1714</hi>
+                </date>
+                <lb/>Tho: Church: I: P:
+            </ab>
+            <ab>
+                <lb/>This is a tru copy of <w copyOf="#the"/> oregn<hi rend="sup">ll</hi>
+                <lb/>Entred
+                <date calendar="julian" datingMethod="julian" when-custom="1714-06-04">
+                    <w copyOf="#the"/> 4<hi rend="sup">th</hi>: day of Iune
+                    <hi rend="underline">1714</hi>
+                </date>
+                <lb/>by Jn<hi rend="sup">o</hi> babcock town
+                C<hi rend="sup underline">ll</hi>
+            </ab>
+        </body>
+    </text>
+</TEI>

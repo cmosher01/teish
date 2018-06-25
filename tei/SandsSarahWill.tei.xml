@@ -42,36 +42,39 @@
     </profileDesc>
 </teiHeader>
 
+<facsimile>
+    <graphic xml:id="p350" url="http://mosher.mine.nu/images/genealogy/main/sources/old/harrison/sands_new_shoreham_land_evidence_pp_416_417_319_307_308_309/p-000.ptif/full/full/0/default.jpg"/>
+    <graphic xml:id="p351" url="http://mosher.mine.nu/images/genealogy/main/sources/old/harrison/sands_new_shoreham_land_evidence_pp_416_417_319_307_308_309/p-001.ptif/full/full/0/default.jpg"/>
+</facsimile>
 
-
-<text xml:lang="en-emodeng">
+    <text xml:lang="en-emodeng">
 <body>
-<pb type="new" n="416" />
+<pb type="new" n="416" facs="#p350"/>
 <pb type="original" n="350" />
 <head>
-<persName ref="#SarahSands">Sarah Sands</persName> seall <graphic url=""/> Block Island alias New Shorum
+<persName ref="#SarahSands">Sarah Sands</persName> seall <graphic url=""/> Block island alias new shorum
 </head>
 
 
 
-<div type="will">
-    <div type="header">
+<div type="entry" n="will">
+    <div type="section" n="header">
         <ab>
             <lb/>In
             <w xml:id="the"><choice><abbr>þ<hi rend="sup">e</hi></abbr><expan>the</expan></choice></w>
             name of God Amen I <persName ref="#SarahSands">Sarah Sands</persName> of
-            <lb/><placeName>Block Island alias New Shorum in <w copyOf="#the"/> Coliny of Rhod Is
-            <lb break="no"/>land and providence plantations in new ingland</placeName>
+            <lb/><placeName>Block island alias new shorum in <w copyOf="#the"/> Coliny of Rhod is
+            <lb break="no"/>Land and providence plantations in new ingland</placeName>
             <lb/>being aged and weake in body but of sound and
-            <lb/>perfect memory praise be given to almighty
+            <lb/>perfect memory praise be given to allmighty
             <lb/>God for <w copyOf="#the"/> same and knowing <w copyOf="#the"/> unsertainty of this
-            <lb/>life one Earth and being desireous to settel things
-            <lb/>in order before my death dow make this my last
+            <lb/>Life one Earth and being desireous to settel things
+            <lb/>in order Before my death dow make this my last
             <lb/>will and testament in maner and forme foloing
         </ab>
     </div>
-    <div type="overview">
-        <div type="dower">
+    <div type="section" n="overview">
+        <div type="clause" n="dower">
             <ab>
                 <lb/>I being wife to
                 <persName ref="#JamesSandsSr">
@@ -91,7 +94,7 @@
                 may plainly appear
             </ab>
         </div>
-        <div type="soul">
+        <div type="clause" n="soul">
             <ab>
                 <lb/>that is to saye first and prinsipally I commend my
                 <lb/>soul to allmity God my creatur assueredly be<pc force="weak">-</pc>
@@ -101,7 +104,7 @@
                 <lb break="no"/>deamer Christ Jesus
             </ab>
         </div>
-        <div type="body">
+        <div type="clause" n="body">
             <ab>
                 and my body to <w copyOf="#the"/> earth from
                 <lb/>whence it was first tacken to be buried in such dease
@@ -110,7 +113,7 @@
                 <lb/>named shall be thought most meet and convenient
             </ab>
         </div>
-        <div type="estate">
+        <div type="clause" n="estate">
             <ab>
                 <lb/>and as touching such worldly <seg xml:id="estate">estate</seg> as <w copyOf="#the"/> Lord in
                 <lb/>marcy hath lent me my will and meaning is <seg corresp="#estate"><w copyOf="#the"/>
@@ -118,7 +121,7 @@
                 <lb break="no"/>after by this my will is exspresed
             </ab>
         </div>
-        <div type="revoke">
+        <div type="clause" n="revoke">
             <ab>
                 and first I dow
                 <lb/>renounce revock <choice><orig>floustarate</orig><reg>frustrate</reg></choice> and make void all
@@ -128,86 +131,88 @@
             </ab>
         </div>
     </div>
-    <div n="1" type="item">
-        <ab>
-            Itum furst I give and bequea<subst><del>f</del><add type="overwrite">th</add></subst> and
-            <lb/>my will is that all my debts and funarall charg
-            <seg type="turnover"><lb/><pc force="weak">(</pc>es</seg>
-            <lb/>be payed and discharged
-        </ab>
-    </div>
-    <div n="2" type="item">
-        <ab>
-            Item 2ly I give and
-            <lb/>prins<subst><del rend="overstrike">e</del><add type="overwrite">a</add></subst>pelly
-            make my youngest sonn <persName ref="#EdwardSands">Edward Sands</persName>
-            <lb/>my sole executor of all my hole estate both catell sheep
-            <lb/>hors coyne and housal stuf or what so ever I shall leave
-            <lb/>at my death exsepting and reserving what is hear
-            <lb break="no"/>after mentioned which is five cows and one hun
-            <lb break="no"/>dred sheep which my will is that thay shall be e
-            <lb break="no"/>quilly devided amoungst my five children which
-            <lb/>are as followeth
-                <persName ref="#JohnSands">John Sands</persName>
-                <persName ref="#JamesSandsJr">James Sands</persName>
-                <persName ref="#SamuelSands">Samuel<lb/>Sands</persName> and
-                <persName ref="#SarahNiles">Sarah Niels</persName> and
-                <persName ref="#MercyRaymond">Marcy Ramond</persName> and
-            <lb/>dow freely give and bequea<unclear>f</unclear>e to each of them
-            <pb type="new" n="417" />
-            <pb type="original" n="351" />
-            <fw type="pageNum" place="top" rend="center">351</fw>
-            <lb/>all former gifts or monys due to me from them all
-            <lb break="no"/>ways
+    <div type="section" n="items">
+        <div n="1" type="item">
+            <ab>
+                Itum furst I give and bequea<subst><del>f</del><add type="overwrite">th</add></subst> and
+                <lb/>my will is that all my debts and funarall charg
+                <seg type="turnover"><lb/><pc force="weak">(</pc>es</seg>
+                <lb/>be payed and discharged
+            </ab>
+        </div>
+        <div n="2" type="item">
+            <ab>
+                Item 2ly I give and
+                <lb/>prins<subst><del rend="overstrike">e</del><add type="overwrite">a</add></subst>pelly
+                make my youngest sonn <persName ref="#EdwardSands">Edward Sands</persName>
+                <lb/>my sole executor of all my hole estate both catell sheep
+                <lb/>hors coyne and housal stuf or what so ever I shall leave
+                <lb/>at my death exsepting and reserving what is hear
+                <lb break="no"/>after mentioned which is five cows and one hun
+                <lb break="no"/>dred sheep which my will is that thay shall be e
+                <lb break="no"/>quilly devided amoungst my five children which
+                <lb/>are as followeth
+                    <persName ref="#JohnSands">John Sands</persName>
+                    <persName ref="#JamesSandsJr">James Sands</persName>
+                    <persName ref="#SamuelSands">Samuel<lb/>Sands</persName> and
+                    <persName ref="#SarahNiles">Sarah Niels</persName> and
+                    <persName ref="#MercyRaymond">Marcy Ramond</persName> and
+                <lb/>dow freely give and bequea<unclear>f</unclear>e to each of them
+                <pb type="new" n="417" facs="#p351"/>
+                <pb type="original" n="351" />
+                <fw type="pageNum" place="top" rend="center circled">351</fw>
+                <lb/>all former gifts or monys due to me from them all
+                <lb break="no"/>ways
 
-            provided that <persName ref="#JamesSandsJr">James Sands</persName> doth forever aqui<unclear>r</unclear>
-            <seg type="turnover"><lb/><unclear>e</unclear></seg>
-            <lb/>any protended <del rend="overstrike"><unclear>or</unclear></del> right or clame of asertain<pc>:</pc> ne
-            <lb break="no"/>gero woman comanly caled by <w copyOf="#the"/> name of <persName ref="#Leano">Leano</persName> <pc>- -</pc>
-            <lb/>bought of <persName ref="#DavidBrown">David Broun</persName>
-            otherways <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
-            <lb/>Sands</persName> shall paye to <w copyOf="#the"/> person home shall be dispose
-            <seg type="turnover"><lb/><pc force="weak">(</pc>s</seg>
-            <lb break="no"/>ed of <w copyOf="#said"/> <rs type="person" ref="#Leano">neagore woman</rs> by <w copyOf="#said"/> <persName ref="#JamesSandsJr">Sands</persName> meanes
-            <lb/>twenty pounds currant mony which he <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
-            <lb/>Sands</persName> hath allredy reseived of me tenn pounds by
-            <lb/>his brother <persName ref="#JohnSands">John Sands</persName> and tenn pounds of <rs type="person" ref="#SarahSands">myself</rs>
-            <lb/>in wool and cheas and butter which <rs type="person" ref="#JamesSandsJr">he</rs> hath received
-            <lb/>upon <w copyOf="#the"/> acounte of <w copyOf="#said"/> <rs type="person" ref="#Leano">negero</rs>
-        </ab>
+                provided that <persName ref="#JamesSandsJr">James Sands</persName> doth forever aqui<unclear>r</unclear>
+                <seg type="turnover"><lb/><unclear>e</unclear></seg>
+                <lb/>any protended <del rend="overstrike"><unclear>or</unclear></del> right or clame of asertain<pc>:</pc> ne
+                <lb break="no"/>gero woman comanly caled by <w copyOf="#the"/> name of <persName ref="#Leano">Leano</persName> <pc>- -</pc>
+                <lb/>bought of <persName ref="#DavidBrown">David Broun</persName>
+                otherways <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
+                <lb/>Sands</persName> shall paye to <w copyOf="#the"/> person home shall be dispose
+                <seg type="turnover"><lb/><pc force="weak">(</pc>s</seg>
+                <lb break="no"/>ed of <w copyOf="#said"/> <rs type="person" ref="#Leano">neagore woman</rs> by <w copyOf="#said"/> <persName ref="#JamesSandsJr">Sands</persName> meanes
+                <lb/>twenty pounds currant mony which he <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
+                <lb/>Sands</persName> hath allredy reseived of me tenn pounds by
+                <lb/>his brother <persName ref="#JohnSands">John Sands</persName> and tenn pounds of <rs type="person" ref="#SarahSands">myself</rs>
+                <lb/>in wool and cheas and butter which <rs type="person" ref="#JamesSandsJr">he</rs> hath received
+                <lb/>upon <w copyOf="#the"/> acounte of <w copyOf="#said"/> <rs type="person" ref="#Leano">negero</rs>
+            </ab>
+        </div>
+        <div n="3" type="item">
+            <ab>
+                Itum 3 I give to
+                <lb/>my grandaughter <persName ref="#SarahNiles2">Sarah Niels</persName> one good fether beed
+                <lb/>and bolster and tow pillows and one blancket
+            </ab>
+        </div>
+        <div n="4" type="item">
+            <ab>
+                Itum
+                <lb/>4 I give to my daughter <persName ref="#MercyRaymond">Marcy Ramond</persName> one good
+                <lb/>larg chest onely what goods shall be left in <w copyOf="#said"/> chest
+                <lb/>shall be equilly devided betwene hurself and my
+                <lb/>daughter in law <persName ref="#MarySands">Mary Sands</persName> wife to my sonn
+                <lb/><persName ref="#EdwardSands">Edward Sands</persName>
+            </ab>
+        </div>
+        <div n="5" type="item">
+            <ab>
+                Itum 5 I give to my tow daughters
+                <lb/><persName ref="#SarahNiles">Sarah Niels</persName> and <persName ref="#MercyRaymond">Marcy Ramond</persName> each of them a
+                <lb/>good larg puter platter apease
+            </ab>
+        </div>
     </div>
-    <div n="3" type="item">
-        <ab>
-            Itum 3 I give to
-            <lb/>my grandaughter <persName ref="#SarahNiles2">Sarah Niels</persName> one good fether beed
-            <lb/>and bolster and tow pillows and one blancket
-        </ab>
-    </div>
-    <div n="4" type="item">
-        <ab>
-            Itum
-            <lb/>4 I give to my daughter <persName ref="#MercyRaymond">Marcy Ramond</persName> one good
-            <lb/>larg chest onely what goods shall be left in <w copyOf="#said"/> chest
-            <lb/>shall be equilly devided betwene hurself and my
-            <lb/>daughter in law <persName ref="#MarySands">Mary Sands</persName> wife to my sonn
-            <lb/><persName ref="#EdwardSands">Edward Sands</persName>
-        </ab>
-    </div>
-    <div n="5" type="item">
-        <ab>
-            Itum 5 I give to my tow daughters
-            <lb/><persName ref="#SarahNiles">Sarah Niels</persName> and <persName ref="#MercyRaymond">Marcy Ramond</persName> each of them a
-            <lb/>good larg puter platter apease
-        </ab>
-    </div>
-    <div type="residue">
+    <div type="section" n="residue">
         <ab>
             all <w copyOf="#the"/> rest of my <w copyOf="#said"/>
             <lb/><seg corresp="#estate">estate</seg> I dow freely give unto my executor <persName ref="#EdwardSands">Ed
             <lb break="no"/>ward Sands</persName> him and his hayors forever
         </ab>
     </div>
-    <div type="execution">
+    <div type="section" n="execution">
         <ab>
             as<pc> - -</pc>
             <lb/>witness my hand and seall this
@@ -225,7 +230,7 @@
             <lb/><persName ref="#SarahSands">Sarah Sands</persName> hur seall <graphic url=""/>
         </ab>
     </div>
-    <div type="witness">
+    <div type="section" n="witness">
         <p>
             <lb/>signed sealed and delivered in presence of<lb/>us
             <lb/><persName ref="#SamuelNiles">Samuel Niels</persName>
@@ -234,7 +239,7 @@
         </p>
     </div>
 </div>
-<div type="certified">
+<div type="entry" n="certified">
     <p>
         <lb/>A tru copy taken
         <lb/>out of <w copyOf="#the"/> origanall
@@ -243,7 +248,7 @@
         <lb/>Clark</roleName></persName>
     </p>
 </div>
-<div type="proved">
+<div type="entry" n="proved">
     <p>
         <lb/>At a meeting at <w copyOf="#the"/> hous of <persName ref="#EdwardBall">Edward Ball</persName>s
         <lb/>by <w copyOf="#the"/> Town Counsell of Shorum
