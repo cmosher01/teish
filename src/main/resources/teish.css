@@ -48,6 +48,10 @@
     color: indianred;
 }
 
+.tei-del {
+    text-decoration: line-through;
+}
+
 .tei-choice>.tei-expan, .tei-choice>.tei-reg, .tei-choice>.tei-corr {
     display: none;
 }
