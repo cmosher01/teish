@@ -1,12 +1,8 @@
-teiHeader {
+.tei-teiHeader, .tei-facsimile {
     display: none;
 }
 
-div.textDiv, div.textBody {
-    display: inline;
-}
-
-lb::before {
+.tei-pb::before, .tei-lb::before {
     content: "\00000a";
     white-space: pre;
 }
@@ -39,7 +35,7 @@ lb::before {
     top: 0.5em;
 }
 
-[type=turnover]>lb, [type=turnunder]>lb {
+[type=turnover]>.tei-lb, [type=turnunder]>.tei-lb {
     display: none;
 }
 
@@ -52,18 +48,24 @@ lb::before {
     color: indianred;
 }
 
-choice>expan, choice>reg, choice>corr {
+.tei-choice>.tei-expan, .tei-choice>.tei-reg, .tei-choice>.tei-corr {
     display: none;
 }
 
-.title[level=a]::before, .title[level=u]::before {
+.tei-title[level=a]::before, .tei-title[level=u]::before {
     content: '\00201c';
 }
 
-.title[level=a]::after, .title[level=u]::after {
+.tei-title[level=a]::after, .tei-title[level=u]::after {
     content: '\00201d';
 }
 
-.title[level=m], .title[level=j], .title[level=s] {
+.tei-title[level=m], .tei-title[level=j], .tei-title[level=s] {
     font-style: italic;
+}
+
+.tei-graphic {
+    width: 80%;
+    object-fit: contain;
+    margin: 3em auto 3em 10%;
 }
