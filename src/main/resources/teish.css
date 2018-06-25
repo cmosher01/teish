@@ -7,6 +7,12 @@
     white-space: pre;
 }
 
+[break="no"]::before {
+    content: "\02010\00000a";
+    white-space: pre;
+    color: indianred;
+}
+
 [rend~=center] {
     text-align: center;
     display: block;
