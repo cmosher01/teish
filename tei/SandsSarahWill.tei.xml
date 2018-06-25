@@ -108,7 +108,7 @@
             <ab>
                 and my body to <w copyOf="#the"/> earth from
                 <lb/>whence it was first tacken to be buried in such dease
-                <seg type="turnover"><lb/><pc force="weak">(</pc>nt</seg>
+                <seg type="turnover"><lb break="no"/><pc force="weak">(</pc>nt</seg>
                 <lb/>and Christian maner as to my <rs type="person" ref="#EdwardSands">executer</rs> hearafter
                 <lb/>named shall be thought most meet and convenient
             </ab>
@@ -136,7 +136,7 @@
             <ab>
                 Itum furst I give and bequea<subst><del>f</del><add type="overwrite">th</add></subst> and
                 <lb/>my will is that all my debts and funarall charg
-                <seg type="turnover"><lb/><pc force="weak">(</pc>es</seg>
+                <seg type="turnover"><lb break="no"/><pc force="weak">(</pc>es</seg>
                 <lb/>be payed and discharged
             </ab>
         </div>
@@ -165,13 +165,13 @@
                 <lb break="no"/>ways
 
                 provided that <persName ref="#JamesSandsJr">James Sands</persName> doth forever aqui<unclear>r</unclear>
-                <seg type="turnover"><lb/><unclear>e</unclear></seg>
+                <seg type="turnover"><lb break="no"/>e</seg>
                 <lb/>any protended <del rend="overstrike"><unclear>or</unclear></del> right or clame of asertain<pc>:</pc> ne
                 <lb break="no"/>gero woman comanly caled by <w copyOf="#the"/> name of <persName ref="#Leano">Leano</persName> <pc>- -</pc>
                 <lb/>bought of <persName ref="#DavidBrown">David Broun</persName>
                 otherways <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
                 <lb/>Sands</persName> shall paye to <w copyOf="#the"/> person home shall be dispose
-                <seg type="turnover"><lb/><pc force="weak">(</pc>s</seg>
+                <seg type="turnover"><lb break="no"/><pc force="weak">(</pc>s</seg>
                 <lb break="no"/>ed of <w copyOf="#said"/> <rs type="person" ref="#Leano">neagore woman</rs> by <w copyOf="#said"/> <persName ref="#JamesSandsJr">Sands</persName> meanes
                 <lb/>twenty pounds currant mony which he <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
                 <lb/>Sands</persName> hath allredy reseived of me tenn pounds by
