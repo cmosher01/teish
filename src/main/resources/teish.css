@@ -75,6 +75,7 @@
 }
 
 .tei-graphic {
+    display: block;
     width: 80%;
     object-fit: contain;
     margin: 3em auto 3em 10%;
