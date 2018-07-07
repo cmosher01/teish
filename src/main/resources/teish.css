@@ -2,7 +2,7 @@
     display: none;
 }
 
-.tei-body {
+[rend~="grid"] {
     display: grid;
     grid-gap: 3em;
     grid-template-columns: 1fr auto;

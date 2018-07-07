@@ -149,7 +149,7 @@
     <xsl:template match="tei:pb">
         <xsl:element name="span">
             <xsl:attribute name="class">
-                <xsl:value-of select="fn:concat(' tei-', fn:local-name())"/>
+                <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
             </xsl:attribute>
             <xsl:element name="span">
                 <xsl:attribute name="class">
