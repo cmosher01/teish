@@ -383,7 +383,7 @@
             <xsl:copy-of select="fn:element-with-id(fn:substring($ref,2))"/>
             <xsl:copy>
                 <xsl:apply-templates select="@*"/>
-                <xsl:apply-templates/>
+                <xsl:apply-templates mode="#current"/>
             </xsl:copy>
         </xsl:if>
     </xsl:template>
