@@ -2,6 +2,12 @@
     display: none;
 }
 
+.tei-body {
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 1fr auto;
+}
+
 .tei-pb::before, .tei-lb::before {
     content: "\00000a";
     white-space: pre;
@@ -75,8 +81,6 @@
 }
 
 .tei-graphic {
-    display: block;
-    width: 80%;
+    width: 100%;
     object-fit: contain;
-    margin: 3em auto 3em 10%;
 }
