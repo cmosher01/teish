@@ -147,7 +147,6 @@
 
     <!-- TEI pb ==> HTML span class="editorial tei-pb" [page:n(type)] -->
     <xsl:template match="tei:pb">
-        <xsl:apply-templates/>
         <xsl:element name="span">
             <xsl:attribute name="class">
                 <xsl:value-of select="fn:concat('editorial tei-', fn:local-name())"/>
@@ -157,6 +156,7 @@
                 <xsl:value-of select="fn:concat(' (',@type,')')"/>
             </xsl:if>
             <xsl:value-of select="']'"/>
+            <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
