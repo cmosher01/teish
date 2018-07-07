@@ -149,13 +149,25 @@
     <xsl:template match="tei:pb">
         <xsl:element name="span">
             <xsl:attribute name="class">
-                <xsl:value-of select="fn:concat('editorial tei-', fn:local-name())"/>
+                <xsl:value-of select="fn:concat(' tei-', fn:local-name())"/>
             </xsl:attribute>
-            <xsl:value-of select="fn:concat('[page: ',@n)"/>
-            <xsl:if test="@type">
-                <xsl:value-of select="fn:concat(' (',@type,')')"/>
-            </xsl:if>
-            <xsl:value-of select="']'"/>
+            <xsl:element name="span">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="'editorial'"/>
+                </xsl:attribute>
+                <xsl:choose>
+                    <xsl:when test="@n">
+                        <xsl:value-of select="fn:concat('[page: ',@n)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'[page break'"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:if test="@type">
+                    <xsl:value-of select="fn:concat(' (',@type,')')"/>
+                </xsl:if>
+                <xsl:value-of select="']'"/>
+            </xsl:element>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
