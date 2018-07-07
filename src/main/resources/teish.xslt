@@ -368,9 +368,9 @@
     <xsl:template match="element()[@facs]" mode="copyOf">
         <xsl:variable name="ref" select="@facs"/>
         <xsl:if test="fn:starts-with($ref,'#')">
+            <xsl:copy-of select="fn:element-with-id(fn:substring($ref,2))"/>
             <xsl:copy>
                 <xsl:apply-templates select="@*"/>
-                <xsl:copy-of select="fn:element-with-id(fn:substring($ref,2))"/>
                 <xsl:apply-templates/>
             </xsl:copy>
         </xsl:if>
