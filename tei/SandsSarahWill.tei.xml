@@ -49,8 +49,8 @@
 
     <text xml:lang="en-emodeng">
 <body>
-<pb type="new" n="416" facs="#p350"/>
-<pb type="original" n="350" />
+    <ab rend="grid">
+<pb n="350" facs="#p350">
 <head>
 <persName ref="#SarahSands">Sarah Sands</persName> seall <graphic url=""/> Block island alias new shorum
 </head>
@@ -158,8 +158,13 @@
                     <persName ref="#SarahNiles">Sarah Niels</persName> and
                     <persName ref="#MercyRaymond">Marcy Ramond</persName> and
                 <lb/>dow freely give and bequea<unclear>f</unclear>e to each of them
-                <pb type="new" n="417" facs="#p351"/>
-                <pb type="original" n="351" />
+            </ab>
+        </div>
+    </div>
+</div>
+</pb>
+                <pb n="351" facs="#p351">
+                <div><div><div><ab>
                 <fw type="pageNum" place="top" rend="center circled">351</fw>
                 <lb/>all former gifts or monys due to me from them all
                 <lb break="no"/>ways
@@ -275,9 +280,9 @@
         <lb/><persName ref="#ThomasRathbone">Thomas Rathbon</persName>
     </p>
 </div>
+                </pb>
 
-
-
+    </ab>
 </body>
 </text>
 
