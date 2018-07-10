@@ -5,8 +5,8 @@
 [rend~="grid"] {
     display: grid;
     grid-gap: 3em;
-    grid-template-columns: minmax(200px, 1fr) auto;
-    grid-auto-rows: 1fr;
+    grid-template-columns: minmax(240px, 1fr) auto;
+    grid-auto-rows: minmax(480px, 1fr);
 }
 
 .tei-pb::before, .tei-lb::before {
