@@ -12,7 +12,7 @@
         method="html"
         version="5.0"
         media-type="text/html"
-        indent="yes"
+        indent="no"
     />
 
     <xsl:param name="full" as="xs:boolean" select="fn:false()"/>
