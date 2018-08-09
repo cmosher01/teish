@@ -48,6 +48,16 @@
     top: 0.5em;
 }
 
+[rend~=rev] {
+    display: inline-block;
+    transform: scale(-1, 1);
+}
+
+[rend~=flip] {
+    display: inline-block;
+    transform: scale(1, -1);
+}
+
 [type=turnover]>.tei-lb, [type=turnunder]>.tei-lb {
     display: none;
 }
