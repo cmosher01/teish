@@ -121,12 +121,10 @@
         </xsl:element>
     </xsl:template>
 
-
-
     <!-- TEI ref target=url ==> HTML a class=tei-ref href=url -->
     <xsl:template match="tei:ref[@target]">
         <xsl:element name="a">
-            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates select="@*[name(.)!='target']"/>
             <xsl:attribute name="class">
                 <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
             </xsl:attribute>
@@ -254,18 +252,19 @@
         </xsl:element>
     </xsl:template>
 
-    <!-- TEI * ref/corresp ==> HTML * title -->
-    <xsl:template match="element()[@ref|@corresp]" mode="copyOf">
-        <xsl:copy>
-            <xsl:apply-templates select="@*"/>
-            <xsl:variable name="ref" select="fn:distinct-values((@ref,@corresp))"/>
-            <xsl:if test="fn:starts-with($ref,'#')">
-                <xsl:attribute name="title">
-                    <xsl:value-of select="fn:element-with-id(fn:substring($ref,2))"/>
+    <!-- TEI * ref="http..." ==> HTML <a href="http...">*...</a> -->
+    <xsl:template match="element()[fn:starts-with(@ref, 'http')]">
+        <xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:value-of select="@ref"/>
+            </xsl:attribute>
+            <xsl:element name="span">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
                 </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
+                <xsl:apply-templates select="@* | node()"/>
+            </xsl:element>
+        </xsl:element>
     </xsl:template>
 
     <!-- TEI choice ==> HTML span class="choice" title -->
@@ -283,8 +282,11 @@
     </xsl:template>
 
     <!-- TEI supplied ==> HTML [...] -->
-    <xsl:template match="tei:supplied" mode="copyOf">
-        <xsl:copy>
+    <xsl:template match="tei:supplied">
+        <xsl:element name="span">
+            <xsl:attribute name="class">
+                <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
+            </xsl:attribute>
             <xsl:apply-templates select="@*"/>
             <xsl:attribute name="class">
                 <xsl:value-of select="'editorial'"/>
@@ -299,14 +301,17 @@
                 </xsl:if>
             </xsl:attribute>
             <xsl:value-of select="'['"/>
-            <xsl:apply-templates mode="#current"/>
+            <xsl:apply-templates/>
             <xsl:value-of select="']'"/>
-        </xsl:copy>
+        </xsl:element>
     </xsl:template>
 
     <!-- TEI gap/unclear ==> HTML [...] -->
-    <xsl:template match="tei:gap | tei:unclear" mode="copyOf">
-        <xsl:copy>
+    <xsl:template match="tei:gap | tei:unclear">
+        <xsl:element name="span">
+            <xsl:attribute name="class">
+                <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
+            </xsl:attribute>
             <xsl:apply-templates select="@*"/>
             <xsl:attribute name="title">
                 <xsl:value-of select="fn:local-name()"/>
@@ -331,14 +336,14 @@
                     <xsl:value-of select="'?'"/>
                 </xsl:element>
             </xsl:if>
-            <xsl:apply-templates mode="#current"/>
+            <xsl:apply-templates/>
             <xsl:element name="span">
                 <xsl:attribute name="class">
                     <xsl:value-of select="'editorial'"/>
                 </xsl:attribute>
                 <xsl:value-of select="']'"/>
             </xsl:element>
-        </xsl:copy>
+        </xsl:element>
     </xsl:template>
 
 
@@ -381,10 +386,13 @@
         <xsl:variable name="ref" select="@facs"/>
         <xsl:if test="fn:starts-with($ref,'#')">
             <xsl:copy-of select="fn:element-with-id(fn:substring($ref,2))"/>
-            <xsl:copy>
+            <xsl:element name="span">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
+                </xsl:attribute>
                 <xsl:apply-templates select="@*"/>
                 <xsl:apply-templates mode="#current"/>
-            </xsl:copy>
+            </xsl:element>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
