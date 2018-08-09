@@ -17,34 +17,12 @@
         </sourceDesc>
     </fileDesc>
 
-    <profileDesc>
-        <particDesc>
-            <person xml:id="SarahSands"><persName><forename>Sarah</forename><surname type="married">Sands</surname></persName></person>
-            <person xml:id="JamesSandsSr"><persName><forename>James</forename><surname>Sands</surname></persName></person>
-            <person xml:id="EdwardSands"><persName><forename>Edward</forename><surname>Sands</surname></persName></person>
-            <person xml:id="JohnSands"><persName><forename>John</forename><surname>Sands</surname></persName></person>
-            <person xml:id="JamesSandsJr"><persName><forename>James</forename><surname>Sands</surname></persName></person>
-            <person xml:id="SamuelSands"><persName><forename>Samuel</forename><surname>Sands</surname></persName></person>
-            <person xml:id="SarahNiles"><persName><forename>Sarah</forename><surname type="married">Niles</surname></persName></person>
-            <person xml:id="MercyRaymond"><persName><forename>Mercy</forename><surname type="married">Raymond</surname></persName></person>
-            <person xml:id="MarySands"><persName><forename>Mary</forename><surname type="married">Sands</surname></persName></person>
-            <person xml:id="SamuelNiles"><persName><forename>Samuel</forename><surname>Niles</surname></persName></person>
-            <person xml:id="SarahNiles2"><persName><forename>Sarah</forename><surname>Niles</surname></persName></person>
-            <person xml:id="DavidBrown"><persName><forename>David</forename><surname>Brown</surname></persName></person>
-            <person xml:id="Leano"><persName><forename>Leano</forename></persName></person>
-            <person xml:id="HannahRose"><persName><forename>Hannah</forename><surname>Rose</surname></persName></person>
-            <person xml:id="NathanielMott"><persName><forename>Nathaniel</forename><surname>Mott</surname></persName></person>
-            <person xml:id="JobCard"><persName><forename>Job</forename><surname>Card</surname></persName></person>
-            <person xml:id="ThomasRathbone"><persName><forename>Thomas</forename><surname>Rathbone</surname></persName></person>
-            <person xml:id="SimonRay"><persName><forename>Simon</forename><surname>Ray</surname></persName></person>
-            <person xml:id="EdwardBall"><persName><forename>Edward</forename><surname>Ball</surname></persName></person>
-        </particDesc>
-    </profileDesc>
+    <profileDesc/>
 </teiHeader>
 
 <facsimile>
-    <graphic xml:id="p350" url="http://mosher.mine.nu/images/genealogy/main/sources/old/harrison/sands_new_shoreham_land_evidence_pp_416_417_319_307_308_309/p-000.ptif/full/full/0/default.jpg"/>
-    <graphic xml:id="p351" url="http://mosher.mine.nu/images/genealogy/main/sources/old/harrison/sands_new_shoreham_land_evidence_pp_416_417_319_307_308_309/p-001.ptif/full/full/0/default.jpg"/>
+    <graphic xml:id="p350" url="https://mosher.mine.nu/images/genealogy/main/sources/old/harrison/sands_new_shoreham_land_evidence_pp_416_417_319_307_308_309/p-000.ptif/full/full/0/default.jpg"/>
+    <graphic xml:id="p351" url="https://mosher.mine.nu/images/genealogy/main/sources/old/harrison/sands_new_shoreham_land_evidence_pp_416_417_319_307_308_309/p-001.ptif/full/full/0/default.jpg"/>
 </facsimile>
 
     <text xml:lang="en-emodeng">
@@ -52,7 +30,8 @@
     <ab rend="grid">
 <pb n="350" facs="#p350">
 <head>
-<persName ref="#SarahSands">Sarah Sands</persName> seall <graphic url=""/> Block island alias new shorum
+    <persName xml:id="SarahSands" ref="https://mosher.mine.nu/genealogy/?person_uuid=b9c9440b-3100-4100-85cb-b9bac85ccd59"><forename>Sarah</forename> <surname>Sands</surname></persName>
+    seall <graphic url=""/> Block island alias new shorum
 </head>
 
 
@@ -62,7 +41,7 @@
         <ab>
             <lb/>In
             <w xml:id="the"><choice><abbr>þ<hi rend="sup">e</hi></abbr><expan>the</expan></choice></w>
-            name of God Amen I <persName ref="#SarahSands">Sarah Sands</persName> of
+            name of God Amen I <persName copyOf="#SarahSands"/> of
             <lb/><placeName>Block island alias new shorum in <w copyOf="#the"/> Coliny of Rhod is
             <lb break="no"/>Land and providence plantations in new ingland</placeName>
             <lb/>being aged and weake in body but of sound and
@@ -77,7 +56,7 @@
         <div type="clause" n="dower">
             <ab>
                 <lb/>I being wife to
-                <persName ref="#JamesSandsSr">
+                <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=eda2e3b4-e409-4ab5-b9a3-ce72c2ce7fe5">
                 <roleName type="honorific" full="abb">
                 <choice><abbr>M<hi rend="sup">r</hi></abbr><expan>Mister</expan></choice>
                 </roleName>
@@ -144,7 +123,7 @@
             <ab>
                 Item 2ly I give and
                 <lb/>prins<subst><del rend="overstrike">e</del><add type="overwrite">a</add></subst>pelly
-                make my youngest sonn <persName ref="#EdwardSands">Edward Sands</persName>
+                make my youngest sonn <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=7743f941-02a7-4b0f-a678-127dda80083f">Edward Sands</persName>
                 <lb/>my sole executor of all my hole estate both catell sheep
                 <lb/>hors coyne and housal stuf or what so ever I shall leave
                 <lb/>at my death exsepting and reserving what is hear
@@ -152,11 +131,11 @@
                 <lb break="no"/>dred sheep which my will is that thay shall be e
                 <lb break="no"/>quilly devided amoungst my five children which
                 <lb/>are as followeth
-                    <persName ref="#JohnSands">John Sands</persName>
-                    <persName ref="#JamesSandsJr">James Sands</persName>
-                    <persName ref="#SamuelSands">Samuel<lb/>Sands</persName> and
-                    <persName ref="#SarahNiles">Sarah Niels</persName> and
-                    <persName ref="#MercyRaymond">Marcy Ramond</persName> and
+                    <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=62904934-5ba2-42fb-80ff-b3cf399efe96">John Sands</persName>
+                    <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=7b496bb7-0e29-427b-bea4-0b4290d93e2f">James Sands</persName>
+                    <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=d3b139a6-48e7-4ca8-9bfd-5984a4fd11c9">Samuel<lb/>Sands</persName> and
+                    <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=fd8c40e1-3106-4fa3-836c-0a1ea9725673">Sarah Niels</persName> and
+                    <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=691172eb-06a9-4403-b0c1-5fe159386e74">Marcy Ramond</persName> and
                 <lb/>dow freely give and bequea<unclear>f</unclear>e to each of them
             </ab>
         </div>
@@ -169,18 +148,18 @@
                 <lb/>all former gifts or monys due to me from them all
                 <lb break="no"/>ways
 
-                provided that <persName ref="#JamesSandsJr">James Sands</persName> doth forever aqui<unclear>r</unclear>
+                provided that <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=7b496bb7-0e29-427b-bea4-0b4290d93e2f">James Sands</persName> doth forever aqui<unclear>r</unclear>
                 <seg type="turnover"><lb break="no"/>e</seg>
                 <lb/>any protended <del rend="overstrike"><unclear>or</unclear></del> right or clame of asertain<pc>:</pc> ne
                 <lb break="no"/>gero woman comanly caled by <w copyOf="#the"/> name of <persName ref="#Leano">Leano</persName> <pc>- -</pc>
                 <lb/>bought of <persName ref="#DavidBrown">David Broun</persName>
-                otherways <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
+                otherways <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=7b496bb7-0e29-427b-bea4-0b4290d93e2f">James
                 <lb/>Sands</persName> shall paye to <w copyOf="#the"/> person home shall be dispose
                 <seg type="turnover"><lb break="no"/><pc force="weak">(</pc>s</seg>
-                <lb break="no"/>ed of <w copyOf="#said"/> <rs type="person" ref="#Leano">neagore woman</rs> by <w copyOf="#said"/> <persName ref="#JamesSandsJr">Sands</persName> meanes
-                <lb/>twenty pounds currant mony which he <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="#JamesSandsJr">James
+                <lb break="no"/>ed of <w copyOf="#said"/> <rs type="person" ref="#Leano">neagore woman</rs> by <w copyOf="#said"/> <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=7b496bb7-0e29-427b-bea4-0b4290d93e2f">Sands</persName> meanes
+                <lb/>twenty pounds currant mony which he <w copyOf="#the"/> <w copyOf="#said"/> <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=7b496bb7-0e29-427b-bea4-0b4290d93e2f">James
                 <lb/>Sands</persName> hath allredy reseived of me tenn pounds by
-                <lb/>his brother <persName ref="#JohnSands">John Sands</persName> and tenn pounds of <rs type="person" ref="#SarahSands">myself</rs>
+                <lb/>his brother <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=62904934-5ba2-42fb-80ff-b3cf399efe96">John Sands</persName> and tenn pounds of <rs type="person" ref="#SarahSands">myself</rs>
                 <lb/>in wool and cheas and butter which <rs type="person" ref="#JamesSandsJr">he</rs> hath received
                 <lb/>upon <w copyOf="#the"/> acounte of <w copyOf="#said"/> <rs type="person" ref="#Leano">negero</rs>
             </ab>
@@ -188,24 +167,24 @@
         <div n="3" type="item">
             <ab>
                 Itum 3 I give to
-                <lb/>my grandaughter <persName ref="#SarahNiles2">Sarah Niels</persName> one good fether beed
+                <lb/>my grandaughter <persName ref="https://www.familysearch.org/tree/person/details/LBCN-KNG">Sarah Niels</persName> one good fether beed
                 <lb/>and bolster and tow pillows and one blancket
             </ab>
         </div>
         <div n="4" type="item">
             <ab>
                 Itum
-                <lb/>4 I give to my daughter <persName ref="#MercyRaymond">Marcy Ramond</persName> one good
+                <lb/>4 I give to my daughter <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=691172eb-06a9-4403-b0c1-5fe159386e74">Marcy Ramond</persName> one good
                 <lb/>larg chest onely what goods shall be left in <w copyOf="#said"/> chest
                 <lb/>shall be equilly devided betwene hurself and my
-                <lb/>daughter in law <persName ref="#MarySands">Mary Sands</persName> wife to my sonn
-                <lb/><persName ref="#EdwardSands">Edward Sands</persName>
+                <lb/>daughter in law <persName ref="https://www.familysearch.org/tree/person/details/LC1L-GBP">Mary Sands</persName> wife to my sonn
+                <lb/><persName ref="https://mosher.mine.nu/genealogy/?person_uuid=7743f941-02a7-4b0f-a678-127dda80083f">Edward Sands</persName>
             </ab>
         </div>
         <div n="5" type="item">
             <ab>
                 Itum 5 I give to my tow daughters
-                <lb/><persName ref="#SarahNiles">Sarah Niels</persName> and <persName ref="#MercyRaymond">Marcy Ramond</persName> each of them a
+                <lb/><persName ref="https://mosher.mine.nu/genealogy/?person_uuid=fd8c40e1-3106-4fa3-836c-0a1ea9725673">Sarah Niels</persName> and <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=691172eb-06a9-4403-b0c1-5fe159386e74">Marcy Ramond</persName> each of them a
                 <lb/>good larg puter platter apease
             </ab>
         </div>
@@ -213,7 +192,7 @@
     <div type="section" n="residue">
         <ab>
             all <w copyOf="#the"/> rest of my <w copyOf="#said"/>
-            <lb/><seg corresp="#estate">estate</seg> I dow freely give unto my executor <persName ref="#EdwardSands">Ed
+            <lb/><seg corresp="#estate">estate</seg> I dow freely give unto my executor <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=7743f941-02a7-4b0f-a678-127dda80083f">Ed
             <lb break="no"/>ward Sands</persName> him and his hayors forever
         </ab>
     </div>
@@ -232,7 +211,7 @@
             </date>
             <pc>¶</pc>
             <lb/>
-            <lb/><persName ref="#SarahSands">Sarah Sands</persName> hur seall <graphic url=""/>
+            <lb/><persName copyOf="#SarahSands"/> hur seall <graphic url=""/>
         </ab>
     </div>
     <div type="section" n="witness">
