@@ -386,13 +386,10 @@
         <xsl:variable name="ref" select="@facs"/>
         <xsl:if test="fn:starts-with($ref,'#')">
             <xsl:copy-of select="fn:element-with-id(fn:substring($ref,2))"/>
-            <xsl:element name="span">
-                <xsl:attribute name="class">
-                    <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
-                </xsl:attribute>
+            <xsl:copy>
                 <xsl:apply-templates select="@*"/>
                 <xsl:apply-templates mode="#current"/>
-            </xsl:element>
+            </xsl:copy>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
