@@ -58,6 +58,10 @@
     transform: scale(1, -1);
 }
 
+[rend~=sc] {
+    font-variant: small-caps;
+}
+
 [type=turnover]>.tei-lb, [type=turnunder]>.tei-lb {
     display: none;
 }
