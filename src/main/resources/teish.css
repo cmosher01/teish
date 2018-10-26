@@ -42,7 +42,7 @@
 
 [rend~=underline] {
     text-decoration: underline;
-    text-decoration-skip: ink;
+    text-decoration-skip: none;
 }
 
 [rend~=sup], [type=turnover] {
