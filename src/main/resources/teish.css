@@ -1,5 +1,20 @@
-.tei-teiHeader, .tei-facsimile {
+.tei-encodingDesc,
+.tei-profileDesc,
+.tei-publicationStmt,
+.tei-fileDesc>.tei-titleStmt>.tei-principal,
+.tei-fileDesc>.tei-titleStmt>.tei-author,
+.tei-facsimile {
     display: none;
+}
+
+.tei-fileDesc>.tei-titleStmt {
+    margin-bottom: 2ex;
+    font-size: 110%;
+}
+
+.tei-fileDesc>.tei-sourceDesc {
+    margin-bottom: 3ex;
+    font-size: 80%;
 }
 
 [rend~="grid"] {
