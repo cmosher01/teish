@@ -108,3 +108,7 @@ img.tei-graphic {
     width: 100%;
     object-fit: contain;
 }
+
+.tei-bibl>.tei-ref {
+    word-break: break-all;
+}
