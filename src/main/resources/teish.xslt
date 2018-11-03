@@ -155,10 +155,10 @@
                 </xsl:attribute>
                 <xsl:choose>
                     <xsl:when test="@n">
-                        <xsl:value-of select="fn:concat('[page: ',@n)"/>
+                        <xsl:value-of select="fn:concat('[beginning of page: ',@n)"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="'[page break'"/>
+                        <xsl:value-of select="'[beginning of page'"/>
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:if test="@type">
