@@ -333,7 +333,7 @@
                     <xsl:attribute name="class">
                         <xsl:value-of select="'editorial'"/>
                     </xsl:attribute>
-                    <xsl:value-of select="'?'"/>
+                    <xsl:value-of select="'…'"/>
                 </xsl:element>
             </xsl:if>
             <xsl:apply-templates/>
