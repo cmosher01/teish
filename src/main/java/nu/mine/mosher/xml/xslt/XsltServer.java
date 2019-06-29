@@ -1,8 +1,10 @@
 package nu.mine.mosher.xml.xslt;
 
-import nu.mine.mosher.xml.SimpleXml;
-import org.xml.sax.SAXParseException;
+import nu.mine.mosher.xml.*;
+import org.xml.sax.*;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.stream.XMLStreamException;
 import javax.xml.transform.TransformerException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -18,6 +20,7 @@ import static spark.Spark.*;
 
 public class XsltServer {
     private static final Map<String, Object> FULL = Collections.singletonMap("full", true);
+    private static final TagName PB = new TagName("http://www.tei-c.org/ns/1.0", "pb", "pb");
 
     private Path teidir;
 
@@ -73,16 +76,16 @@ public class XsltServer {
         this.teidir = teidir;
     }
 
-    private String text(final String nameXml, final String nameXslt) throws SAXParseException, IOException, URISyntaxException, TransformerException {
+    private String text(final String nameXml, final String nameXslt) throws SAXException, IOException, URISyntaxException, TransformerException, ParserConfigurationException, XMLStreamException {
         return getXml(nameXml).transform(getXslt(nameXslt), FULL);
     }
 
-    private String text(final String nameXml) throws SAXParseException, IOException {
+    private String text(final String nameXml) throws SAXException, IOException, ParserConfigurationException, XMLStreamException {
         return getXml(nameXml).toString();
     }
 
-    private SimpleXml getXml(final String nameXml) throws SAXParseException, IOException {
-        return new SimpleXml(readFrom(getLocalPath(nameXml)));
+    private SimpleXml getXml(final String nameXml) throws SAXException, IOException, ParserConfigurationException, XMLStreamException {
+        return new SimpleXml(XmlUnMilestone.unMilestone(readFrom(getLocalPath(nameXml)),PB));
     }
 
     private static String getXslt(final String nameXslt) throws IOException, URISyntaxException {

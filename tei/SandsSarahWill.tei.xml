@@ -28,10 +28,10 @@
     <text xml:lang="en-emodeng">
 <body>
     <ab rend="grid">
-<pb n="350" facs="#p350">
+<pb n="350" facs="#p350"/>
 <head>
     <persName xml:id="SarahSands" ref="https://mosher.mine.nu/genealogy/?person_uuid=b9c9440b-3100-4100-85cb-b9bac85ccd59"><forename>Sarah</forename> <surname>Sands</surname></persName>
-    seall <graphic url=""/> Block island alias new shorum
+    seall (#) Block island alias new shorum
 </head>
 
 
@@ -137,13 +137,7 @@
                     <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=fd8c40e1-3106-4fa3-836c-0a1ea9725673">Sarah Niels</persName> and
                     <persName ref="https://mosher.mine.nu/genealogy/?person_uuid=691172eb-06a9-4403-b0c1-5fe159386e74">Marcy Ramond</persName> and
                 <lb/>dow freely give and bequea<unclear>f</unclear>e to each of them
-            </ab>
-        </div>
-    </div>
-</div>
-</pb>
-                <pb n="351" facs="#p351">
-                <div><div><div><ab>
+                <pb n="351" facs="#p351"/>
                 <fw type="pageNum" place="top" rend="center circled">351</fw>
                 <lb/>all former gifts or monys due to me from them all
                 <lb break="no"/>ways
@@ -259,7 +253,6 @@
         <lb/><persName ref="#ThomasRathbone">Thomas Rathbon</persName>
     </p>
 </div>
-                </pb>
 
     </ab>
 </body>

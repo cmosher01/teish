@@ -1,46 +1,18 @@
-import java.util.concurrent.Callable
-import java.util.concurrent.ExecutorService
-import java.util.concurrent.Executors
-
 apply plugin: 'java'
 apply plugin: 'application'
 
-group = 'nu.mine.mosher.xml.xslt'
-version = '1.0.0-SNAPSHOT'
-mainClassName = 'nu.mine.mosher.xml.xslt.XsltServer'
-sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
-    maven {
-        url 'https://mosher.mine.nu/nexus/repository/maven-public/'
-    }
+    jcenter()
 }
 
 dependencies {
-    compile group: 'nu.mine.mosher.xml', name: 'SimpleXml', version: 'latest.integration'
-    compile group: 'org.slf4j', name: 'slf4j-jdk14', version: 'latest.release'
-    compile group: 'com.sparkjava', name: 'spark-core', version: 'latest.release'
+    implementation group: 'nu.mine.mosher.xml', name: 'SimpleXml', version: 'latest.integration'
+    implementation group: 'nu.mine.mosher.xml', name: 'xml-unmilestone', version: 'latest.integration'
+    implementation group: 'com.sparkjava', name: 'spark-core', version: 'latest.release'
+    runtime group: 'ch.qos.logback', name: 'logback-classic', version: 'latest.release'
 }
 
-class RunAsyncTask extends DefaultTask {
-  @TaskAction
-  def startAsync() {
-    ExecutorService es = Executors.newSingleThreadExecutor()
-    es.submit({
-      project.javaexec {
-        classpath = project.sourceSets.main.runtimeClasspath
-        main = project.mainClassName
-        args = ["./tei"]
-      }
-    } as Callable)
-
-  }
-}
-
-task serve(type: RunAsyncTask, dependsOn: compileJava) {
-  doLast {
-    println 'browse to http://127.0.0.1:4567'
-    sleep(2 * 1000)
-  }
-}
+group = 'nu.mine.mosher.xml.xslt'
+mainClassName = 'nu.mine.mosher.xml.xslt.XsltServer'
+version = '1.9'
