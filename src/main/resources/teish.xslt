@@ -350,14 +350,19 @@
 
     <!-- TEI graphic ==> HTML img -->
     <xsl:template match="tei:graphic">
-        <xsl:element name="img">
-            <xsl:attribute name="class">
-                <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
-            </xsl:attribute>
-            <xsl:attribute name="src">
+        <xsl:element name="a">
+            <xsl:attribute name="href">
                 <xsl:value-of select="@url"/>
             </xsl:attribute>
-            <xsl:apply-templates select="@*"/>
+            <xsl:element name="img">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
+                </xsl:attribute>
+                <xsl:attribute name="src">
+                    <xsl:value-of select="@url"/>
+                </xsl:attribute>
+                <xsl:apply-templates select="@*"/>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
 
