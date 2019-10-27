@@ -149,6 +149,8 @@
             <xsl:attribute name="class">
                 <xsl:value-of select="fn:concat('tei-', fn:local-name())"/>
             </xsl:attribute>
+            <xsl:apply-templates select="@*"/>
+            <xsl:element name="hr"/>
             <xsl:element name="span">
                 <xsl:attribute name="class">
                     <xsl:value-of select="'editorial'"/>
@@ -386,15 +388,15 @@
         </xsl:if>
     </xsl:template>
 
-    <!-- * facs #ID ==> (deep copy of) * id=ID -->
+    <!-- * facs #ID ==> append (deep copy of) * id=ID -->
     <xsl:template match="element()[@facs]" mode="copyOf">
         <xsl:variable name="ref" select="@facs"/>
         <xsl:if test="fn:starts-with($ref,'#')">
-            <xsl:copy-of select="fn:element-with-id(fn:substring($ref,2))"/>
             <xsl:copy>
                 <xsl:apply-templates select="@*"/>
                 <xsl:apply-templates mode="#current"/>
             </xsl:copy>
+            <xsl:copy-of select="fn:element-with-id(fn:substring($ref,2))"/>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
