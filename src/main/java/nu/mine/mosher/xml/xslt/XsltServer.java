@@ -1,26 +1,19 @@
 package nu.mine.mosher.xml.xslt;
 
-import nu.mine.mosher.xml.*;
-import org.xml.sax.*;
+import nu.mine.mosher.xml.SimpleXml;
+import org.xml.sax.SAXException;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.stream.XMLStreamException;
 import javax.xml.transform.TransformerException;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Collections;
-import java.util.Map;
+import java.nio.file.*;
+import java.util.*;
 
 import static spark.Spark.*;
 
 public class XsltServer {
     private static final Map<String, Object> FULL = Collections.singletonMap("full", true);
-    private static final TagName PB = new TagName("http://www.tei-c.org/ns/1.0", "pb", "pb");
 
     private Path teidir;
 
@@ -76,23 +69,23 @@ public class XsltServer {
         this.teidir = teidir;
     }
 
-    private String text(final String nameXml, final String nameXslt) throws SAXException, IOException, URISyntaxException, TransformerException, ParserConfigurationException, XMLStreamException {
+    private String text(final String nameXml, final String nameXslt) throws SAXException, IOException, URISyntaxException, TransformerException {
         return getXml(nameXml).transform(getXslt(nameXslt), FULL);
     }
 
-    private String text(final String nameXml) throws SAXException, IOException, ParserConfigurationException, XMLStreamException {
+    private String text(final String nameXml) throws SAXException, IOException {
         return getXml(nameXml).toString();
     }
 
-    private SimpleXml getXml(final String nameXml) throws SAXException, IOException, ParserConfigurationException, XMLStreamException {
-        return new SimpleXml(XmlUnMilestone.unMilestone(readFrom(getLocalPath(nameXml)),PB));
+    private SimpleXml getXml(final String nameXml) throws SAXException, IOException {
+        return new SimpleXml(readFrom(getLocalPath(nameXml)));
     }
 
     private static String getXslt(final String nameXslt) throws IOException, URISyntaxException {
         return readFrom(getResourcePath(nameXslt));
     }
 
-    private Path getLocalPath(final String filename) throws FileNotFoundException {
+    private Path getLocalPath(final String filename) {
         return this.teidir.resolve(filename);
     }
 

@@ -1,18 +1,22 @@
-apply plugin: 'java'
 apply plugin: 'application'
 
 repositories {
-    mavenCentral()
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
     implementation group: 'nu.mine.mosher.xml', name: 'SimpleXml', version: 'latest.integration'
-    implementation group: 'nu.mine.mosher.xml', name: 'xml-unmilestone', version: 'latest.integration'
     implementation group: 'com.sparkjava', name: 'spark-core', version: 'latest.release'
     runtime group: 'ch.qos.logback', name: 'logback-classic', version: 'latest.release'
 }
 
 group = 'nu.mine.mosher.xml.xslt'
-mainClassName = 'nu.mine.mosher.xml.xslt.XsltServer'
-version = '1.9'
+
+application {
+    mainClassName = 'nu.mine.mosher.xml.xslt.XsltServer'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+}
